@@ -9,7 +9,7 @@ function App() {
   console.log(allRoutes)
  
   return (
-    <div className="BaseDiv">
+    <div className="baseDiv">
       <Router allRoutes={allRoutes} />
     </div>
   );
