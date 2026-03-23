@@ -1,10 +1,20 @@
-import './App.css';
+import { useState } from 'react';
+import Router from './router/Router';
+import publicRoutes from './router/routes/publicRoutes';
+import '../src/assets/css/App.css';
 
 function App() {
+
+  const [allRoutes, setAllRoutes] = useState([...publicRoutes])
+  console.log(allRoutes)
+ 
   return (
-    <div className="App">
-      <h1>What up?</h1>
+    <div className="BaseDiv">
+      <Router allRoutes={allRoutes} />
     </div>
   );
 }
 export default App;
+
+
+// <div style={AppBaseDiv}>
