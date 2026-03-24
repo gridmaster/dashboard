@@ -6,53 +6,62 @@ const Register = () => {
         <div className='outerDivStyle'>
             <div >
                 <div className='welcomeDivStyle'>
-                    <form>
+
                         <table>
-                            <tr >
-                                <th className='th-header-style' >Welcome to the Jungle</th>
-                            </tr>
-                            <tr >
-                                <p className='p-style'>Please register to board the Nostromo</p>
-                            </tr>
-                        
-                            <tr>
+                            <thead>
                                 <tr >
-                                    <label className='tr-style' htmlFor="name">Name</label>
+                                    <th className='th-header-style' >Welcome to the Jungle</th>
                                 </tr>
                                 <tr >
+                                    <th className='p-style'>Please register to board the Nostromo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <th className='th-style'>Name</th>
+                                </tr>
+                                <tr >
+                                    <td>
                                     <input className='tr-style tr-input-style' type='text' name='name' placeholder='Name' id='name' required />
+                                    </td>
                                 </tr>
-                            </tr>
 
-                             <tr>
                                 <tr >
-                                    <label className='tr-style' htmlFor="email">Email</label>
-                                </tr>
-                                <tr >
-                                    <input className='tr-style tr-input-style' type='text' name='email' placeholder='Email' id='email' required />
-                                </tr>
-                            </tr>
-
-                            <tr>
-                                <tr >
-                                    <label className='tr-style' htmlFor="password">Password</label>
+                                    <th className='th-style'>Email</th>
                                 </tr>
                                 <tr >
-                                    <input className='tr-style tr-input-style' type='text' name='password' placeholder='Password' id='password' required />
+                                    <th>
+                                        <input className='tr-style tr-input-style' type='text' name='email' placeholder='Email' id='email' required />
+                                    </th>
                                 </tr>
-                            </tr>
 
-                            <tr >
-                                <input className='tr-style tr-checkbox-style' type='checkbox' name='checkbox' id='checkbox' />
-                                <label className='tr-style tr-lable-style' htmlFor='checkbox'> I agree to privacy policy & terms</label>
-                            </tr>
+                                <tr >
+                                    <th className='th-style'>Password</th>
+                                </tr>
+                                <tr >
+                                    <th>
+                                        <input className='tr-style tr-input-style' type='text' name='password' placeholder='Password' id='password' required />
+                                    </th>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr >
+                                    <th>
+                                        <div className='checkbox-container'>
+                                            <input className='div-input th-label th-input tr-checkbox-style' type='checkbox' name='checkbox' id='checkbox' />
 
+                                            <label className='th-label th-label-style'> I agree to privacy policy & terms</label>
+                                        </div>
+                                    </th>
+
+                                </tr>
+                            </tfoot>
                         </table>
 
                         <div className='tr-button-center'>
                             <button className='tr-style tr-button-style'>Sign up!</button> 
                         </div>
-                    </form>
+ 
                 </div>
             </div>
         </div>
