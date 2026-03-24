@@ -13,8 +13,8 @@
 
 .welcomeDivStyle {
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 415px;
     background-color: #6f68d1;
     color: white;
     border: 1px solid black;
@@ -22,20 +22,24 @@
     justify-content: left; 
 }
 
-.h2-Style {
+.th-header-style {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     height: 5px;
-    width: 300px;
+    width: 100%;
     background-color: #6f68d1;
     color: white;
-    justify-content: left; 
+    justify-content: center; 
 }
 
 .p-style {
-    margin-top: 0;
-    height: 5px;
-    vertical-align: left;
-    text-align: left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    height: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .table-style {
@@ -43,12 +47,38 @@
 }
 
 .tr-style {
-    text-align: left;
     margin-left: 20px;
     vertical-align: middle;
 }
 
 .tr-input-style {
-    width: 200px;
+    width: 360px;
+    border-radius: 3px;
+    border-width: 1px;
+}
 
+.tr-checkbox-style {
+    margin-top: 7px;
+    margin-left: 22px;
+    margin-right: -17px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+}
+
+.tr-label-style {
+    margin-left: 2px;
+    vertical-align: middle;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.tr-button-style {
+    margin-left: 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.tr-button-center {
+    margin-left: 38%;
 }
