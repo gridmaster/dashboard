@@ -1,4 +1,15 @@
 
+.registration-background {
+    height: 100%; /* Ensures body and html cover the full viewport height */
+    margin: 0;   /* Removes default body margins, eliminating white borders */
+    padding: 0;
+    background-image: url("../images/cover-backdrop.jpg"); /* Replace with your image path */
+    background-position: center;   /* Centers the image in the viewport */
+    background-repeat: no-repeat;  /* Prevents the image from tiling */
+    background-size: cover;        /* Scales the image to cover the entire container while preserving aspect ratio */
+    background-attachment: fixed;  /* Keeps the background image fixed when the page scrolls (optional, but a common choice) */
+}
+
 .outerDivStyle {
     display: flex;
     width: 100%;
@@ -17,8 +28,8 @@
 
 .welcomeDivStyle {
     display: flex;
-    height: 300px;
-    width: 415px;
+    height: 305px;
+    width: 350px;
     background-color: #6f68d1;
     color: white;
     border: 1px solid black;
@@ -26,28 +37,33 @@
     justify-content: left; 
 }
 
+.register-headers-text {
+    display: flex;
+    height: 5px;
+    width: 345px;
+    justify-content: center; 
+}
+
 .th-header-style {
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 20px;
-    display: flex;
-    height: 5px;
-    width: 100%;
     background-color: #6f68d1;
     color: white;
-    justify-content: center; 
 }
 
 .p-style {
-    margin-top: 10px;
-    margin-bottom:10px;
-    height: 10px;
-    width: 100%;
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom:20px;
 }
 
 .table-style {
     align-content: left;
+}
+
+.tr-td {
+    display: flex;
+    width: 345px;
 }
 
 .tr-style {
@@ -58,7 +74,7 @@
 .th-style {
     display: flex;
     width: 200px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 20px;
     text-align: left;
 }
@@ -73,26 +89,23 @@
 
 .checkbox-container {
   display: flex;
-  align-items: center; /* Vertically centers the items */
-  margin-bottom: 15px; /* Adds space between items */
+  align-items: center;
 }
 
 .checkbox-container div-input[type="checkbox"] {
-  margin-right: 10px; /* Adds space between the checkbox and the label */
-  /* Ensures the checkbox doesn't shrink on small screens */
+  margin-right: 10px; 
   flex-shrink: 0; 
 }
 
 .tr-input-style {
     margin-left: 18px;
-    width: 360px;
+    width: 300px;
     border-radius: 3px;
     border-width: 1px;
 }
 
 .tr-input {
     display: flex;
-    margin-top: 7px;
     margin-left: 1px;
     margin-bottom: 7px;
     border-radius: 3px;
@@ -101,7 +114,7 @@
 .tr-checkbox-style {
     display: flex;
     margin-top: 7px;
-    margin-left: 20px;
+    margin-left: 23px;
     margin-right: -17px;
     margin-bottom: 7px;
     border-radius: 3px;
@@ -115,13 +128,25 @@
 }
 
 .tr-button-style {
-    margin-left: 28px;
+    display: flex;
+    width: 80%;
+    height: 25px;
     margin-top: 5px;
-    vertical-align: middle;
-    border-radius: 3px;
+    border-radius: 5px;
+    justify-content: center;
     align-items: center;
+    color: white;
+    background-color: black;
 }
 
-.tr-button-center {
-    margin-left: 38%;
+.div-tr-button {
+    display: flex;
+    width: 345px;
+    vertical-align: middle;
+}
+
+.register-button {
+    display: flex;
+    width: 345px;
+    justify-content: center; 
 }
