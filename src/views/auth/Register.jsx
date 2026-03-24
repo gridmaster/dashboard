@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { FaGoogle } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
 import '../../assets/css/Register.css';
 
 const Register = () => {
@@ -16,7 +19,7 @@ const Register = () => {
                                 <th className='register-headers-text th-header-style' >Welcome to the Jungle</th>
                             </tr>
                             <tr className='tr-td'>
-                                <th className='register-headers-text p-style'>Please register to board the Nostromo</th>
+                                <th className='register-headers-text'>Please register to board the Nostromo</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,7 +63,7 @@ const Register = () => {
                                         <button className='tr-button-style'>Sign up!</button>
                                     </div>
                                     <div>
-                                        <p className='p-style'>Already have an account?<Link className='p-signin-link' to="/login">Sign In!</Link></p>
+                                        <p className='p-style p-link-style'>Already have an account?<Link className='p-signin-link' to="/login">Sign In!</Link></p>
                                     </div>
 
                                     <div>
@@ -70,12 +73,19 @@ const Register = () => {
                                                 <span className='styled-or'>  Or  </span>
                                             </div>
                                             <hr className='styled-hr'></hr>
-                                            <div>
 
-                                            </div>
+
                                         </div>
                                     </div>
-                                </th>
+                                        <div>                                       
+                                            <div className='div-inline register-alt-button register-button '>
+                                                <button className='googface-button-style button media-button-orange'><FaGoogle /></button>
+                                            </div>
+                                            <div className='div-inline register-alt-button register-button'>
+                                                <button className='googface-button-style button media-button-blue'><FaFacebook /></button>
+                                            </div>
+                                        </div>
+                                </th>           
                             </tr>
                         </tfoot>
                     </table>
