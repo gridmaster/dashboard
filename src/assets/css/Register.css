@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+/*.registration-form {
+    align-self: center;
+}*/
+
 .welcome-container {
   display: grid;
 }
@@ -62,7 +66,7 @@
 .th-label-style { 
     display: flex;
     width: 250px;
-    padding-left: 25px;
+    margin-left: 25px;
     padding-top: -20px;
     text-align: left;
 }
@@ -80,15 +84,24 @@
 }
 
 .tr-input-style {
+    margin-left: 18px;
     width: 360px;
     border-radius: 3px;
     border-width: 1px;
 }
 
+.tr-input {
+    display: flex;
+    margin-top: 7px;
+    margin-left: 1px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+}
+
 .tr-checkbox-style {
     display: flex;
     margin-top: 7px;
-    margin-left: 22px;
+    margin-left: 20px;
     margin-right: -17px;
     margin-bottom: 7px;
     border-radius: 3px;
@@ -102,7 +115,8 @@
 }
 
 .tr-button-style {
-    margin-left: 20px;
+    margin-left: 28px;
+    margin-top: 5px;
     vertical-align: middle;
     border-radius: 3px;
     align-items: center;
