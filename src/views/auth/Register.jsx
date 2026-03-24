@@ -62,6 +62,19 @@ const Register = () => {
                                     <div>
                                         <p className='p-style'>Already have an account?<Link className='p-signin-link' to="/login">Sign In!</Link></p>
                                     </div>
+
+                                    <div>
+                                        <div className='styled-line'>
+                                            <hr className='styled-hr'></hr>
+                                            <div>
+                                                <span className='styled-or'>  Or  </span>
+                                            </div>
+                                            <hr className='styled-hr'></hr>
+                                            <div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </th>
                             </tr>
                         </tfoot>

@@ -28,7 +28,7 @@
 
 .welcomeDivStyle {
     display: flex;
-    height: 360px;
+    height: 425px;
     width: 350px;
     background-color: #6f68d1;
     color: white;
@@ -136,7 +136,7 @@
     width: 80%;
     height: 25px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -154,4 +154,28 @@
     display: flex;
     width: 345px;
     justify-content: center; 
+}
+
+hr.styled-hr {
+  /* Removes default border */
+  border: none; 
+  /* Sets the height (thickness) of the line */
+  height: 2px; 
+  /* Sets the background color of the line */
+  background-color: red; 
+  /* Adjusts the width of the line (optional, default is 100%) */
+  width: 140px;
+  /* Centers the line if width is less than 100% */
+  margin: 0 auto; 
+}
+
+div.styled-line {
+    display: flex;
+    width: 344px;
+}
+
+span.styled-or {
+    display: flex;
+    height: 30px;
+    margin-top: -9px;
 }
