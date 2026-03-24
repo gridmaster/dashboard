@@ -28,13 +28,23 @@
 
 .welcomeDivStyle {
     display: flex;
-    height: 416px;
     width: 350px;
     background-color: #6f68d1;
     color: white;
     border: 1px solid black;
     border-radius: 7px;
     justify-content: left; 
+}
+
+.registerDivStyle {
+    display: flex;
+    height: 416px;
+
+}
+
+.loginDivStyle {
+    display: flex;
+    height: 416px;
 }
 
 .register-headers-text {
@@ -47,7 +57,7 @@
 
 .th-header-style {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background-color: #6f68d1;
     color: white;

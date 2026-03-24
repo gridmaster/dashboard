@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -6,13 +6,32 @@ import { FaFacebook } from "react-icons/fa";
 import '../../assets/css/Register.css';
 
 const Register = () => {
+
+    const [state, setState] = useState({
+        name: "",
+        email: "",
+        password: ""
+    })
+
+    const inputHandle = (e) => {
+        setState({
+            ...state,
+            [e.target.name] : e.target.value
+        })
+    }
+
+    const submit = (e) =>{
+        e.preventDefault()
+        console.log(state)
+        }
+
     return (
 
         <div className='outerDivStyle registration-background'>
             <div >
  
                 <div className='welcomeDivStyle'>
-                    <form className='registration-form'>
+                    <form onSubmit={submit} className='registration-form'>
                     <table>
                         <thead>
                             <tr className='tr-td'>
@@ -28,7 +47,7 @@ const Register = () => {
                             </tr>
                             <tr className='tr-td'>
                                 <td >
-                                <input className='tr-style tr-input-style' type='text' name='name' placeholder='Name' id='name' required />
+                                <input onChange={inputHandle} value={state.name} className='tr-style tr-input-style' type='text' name='name' placeholder='Name' id='name' required />
                                 </td>
                             </tr>
 
@@ -37,7 +56,7 @@ const Register = () => {
                             </tr>
                             <tr >
                                 <th className='tr-td'>
-                                    <input className='tr-style tr-input-style' type='text' name='email' placeholder='Email' id='email' required />
+                                    <input onChange={inputHandle} value={state.email} className='tr-style tr-input-style' type='email' name='email' placeholder='Email' id='email' required />
                                 </th>
                             </tr>
 
@@ -46,7 +65,7 @@ const Register = () => {
                             </tr>
                             <tr >
                                 <th className='tr-td'>
-                                    <input className='tr-style tr-input-style' type='text' name='password' placeholder='Password' id='password' required />
+                                    <input onChange={inputHandle} value={state.password} className='tr-style tr-input-style' type='password' name='password' placeholder='Password' id='password' required />
                                 </th>
                             </tr>
                         </tbody>

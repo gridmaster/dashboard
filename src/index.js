@@ -1,4 +1,4 @@
-import React,{lazy} from 'react';
+import React,{lazy,Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/css/index.css';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className='outerDiv'>
     <BrowserRouter>
-      <App />
+      <Suspense>
+        <App />
+      </Suspense>
     </BrowserRouter>
   </div>
 );
