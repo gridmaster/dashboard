@@ -248,20 +248,3 @@ span.styled-or {
     height: 30px;
     margin-top: -9px;
 }
-
-.admin-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110px;
-    margin-top: 7px;
-    object-fit: cover;
-}
-
-.admin-pic {
-    display: flex;
-    width: 200px;
-    height: 100px;
-
-    justify-content: center;
-}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import '../../assets/css/Register.css';
+import '../../assets/css/Admin.css';
 
 const AdminLogin = () => {
 
@@ -30,11 +31,16 @@ const AdminLogin = () => {
                     <form onSubmit={submit} className='registration-form'>
                     <table>
                         <thead>
+                        <tr>
+                        <th>
+                            <p>The Boss!</p>
                             <div className='admin-logo'>
                                 <div className='admin-pic'>
-                                    <img src="http://localhost:3000/images/angry ape.jpg" alt="image"/>
+                                    <img src="http://localhost:3000/images/angry ape.jpg" alt="The Boss!"/>
                                 </div>
                             </div>
+                            </th>
+                            </tr>
                         </thead>
                         <tbody>
                             
@@ -60,7 +66,7 @@ const AdminLogin = () => {
                             <tr >
                                 <th>
                                     <div className='register-button'>
-                                        <button className='tr-button-style'>Log in!</button>
+                                        <button className='tr-button-style admin-button'>Log in!</button>
                                     </div>
                                 </th>           
                             </tr>

@@ -1,0 +1,27 @@
+.sizeing {
+    display: flex;
+    margin-bottom: 1px;
+    justify-content: center;
+}
+
+
+
+.admin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.admin-pic {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+}
+
+.admin-button {
+    margin-bottom: 15px;
+}
