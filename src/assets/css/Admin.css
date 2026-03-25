@@ -4,8 +4,6 @@
     justify-content: center;
 }
 
-
-
 .admin-logo {
     display: flex;
     justify-content: center;
@@ -17,11 +15,33 @@
 
 .admin-pic {
     display: flex;
-    width: 200px;
+    width: 100px;
     height: 100px;
     justify-content: center;
 }
 
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+img-shape {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
 .admin-button {
     margin-bottom: 15px;
+}
+
+.th-header-admin {
+    font-size: 24px;
+    margin-top: 10px;
+    background-color: #6f68d1;
+    color: white;
 }

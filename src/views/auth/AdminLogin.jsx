@@ -26,17 +26,21 @@ const AdminLogin = () => {
 
         <div className='outerDivStyle registration-background'>
             <div >
- 
+
                 <div className='welcomeDivStyle'>
                     <form onSubmit={submit} className='registration-form'>
                     <table>
                         <thead>
+                        <tr >
+                            <th className='register-headers-text th-header-admin' >Log on to the Jungle!</th>
+                        </tr>
+
                         <tr>
                         <th>
                             <p>The Boss!</p>
                             <div className='admin-logo'>
                                 <div className='admin-pic'>
-                                    <img src="http://localhost:3000/images/angry ape.jpg" alt="The Boss!"/>
+                                    <img className='img-shape' src="http://localhost:3000/images/angry ape.jpg" alt="The Boss!"/>
                                 </div>
                             </div>
                             </th>
