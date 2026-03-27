@@ -33,10 +33,10 @@ const Login = () => {
                     <form onSubmit={submit} className='registration-form'>
                     <table>
                         <thead>
-                            <tr className='tr-td'>
+                            <tr >
                                 <th className='register-headers-text th-header-style' >Welcome to the Jungle</th>
                             </tr>
-                            <tr className='tr-td'>
+                            <tr >
                                 <th className='register-headers-text'>Please sign in to board the Nostromo</th>
                             </tr>
                         </thead>
@@ -79,7 +79,7 @@ const Login = () => {
                                             <hr className='styled-hr'></hr>
                                         </div>
                                     </div>
-                                        <div>                                       
+                                        <div className='outer-width'>                   
                                             <div className='div-inline register-alt-button register-button '>
                                                 <button className='googface-button-style button media-button-orange'><FaGoogle /></button>
                                             </div>
