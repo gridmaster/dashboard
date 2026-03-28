@@ -12,7 +12,7 @@ const AdminLogin = () => {
 
     const [state, setState] = useState({
         email: "",
-        password: ""
+        password: ""    //whatup123
     })
 
     const inputHandle = (e) => {
