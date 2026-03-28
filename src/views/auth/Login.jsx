@@ -93,9 +93,7 @@ const Login = () => {
                     </table>
                     </form>
                 </div>
-
             </div>
-    
         </div>
    
     );
