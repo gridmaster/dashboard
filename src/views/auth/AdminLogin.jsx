@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react'; 
+import { useDispatch, useSelector } from 'react-redux';
+import { admin_login,messageClear } from '../../store/Reducers/authReducer';
+import { PropagateLoader } from 'react-spinners';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 import '../../assets/css/Register.css';
 import '../../assets/css/Admin.css';
-import { admin_login } from '../../store/Reducers/authReducer';
-
 
 const AdminLogin = () => {
 
+    const navigate = useNavigate()
     const dispatch = useDispatch()
+    const {loader,errorMessage,successMessage} = useSelector(state=>state.auth)
 
-    const [state, setState] = useState({
+    const [state, setState] = useState({ 
         email: "",
-        password: ""    //whatup123
+        password: ""
     })
 
     const inputHandle = (e) => {
@@ -22,11 +26,31 @@ const AdminLogin = () => {
         })
     }
 
-    const submit = (e) =>{
+    const submit = (e) => {
         e.preventDefault()
         dispatch(admin_login(state))
-        //console.log(state)
+        // console.log(state)
+    }
+
+    const overrideStyle = {
+        display : 'flex',
+        margin : '0 auto',
+        height: '24px',
+        justifyContent : 'center',
+        alignItems : 'center'
+    }
+
+   useEffect(() => {
+        if (errorMessage) {
+            toast.error(errorMessage)
+            dispatch(messageClear())
         }
+        if (successMessage) {
+            toast.success(successMessage)
+            dispatch(messageClear())  
+            navigate('/')          
+        }
+    },[errorMessage,successMessage])
 
     return (
 
@@ -76,7 +100,13 @@ const AdminLogin = () => {
                             <tr >
                                 <th>
                                     <div className='register-button'>
-                                        <button className='tr-button-style admin-button'>Log in!</button>
+
+                                        <button disabled={loader ? true : false}  className='tr-button-style admin-button'>
+                                            {
+                                            loader ? <PropagateLoader color='#fff' cssOverride={overrideStyle} /> : 'Log in'
+                                            } 
+                                        </button>
+  
                                     </div>
                                 </th>           
                             </tr>

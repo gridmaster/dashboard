@@ -213,7 +213,6 @@ Div.outer-width {
 .div-inline {
   display: inline-block;
   width: 150px; 
-
   vertical-align: top; 
   box-sizing: border-box; 
 }
