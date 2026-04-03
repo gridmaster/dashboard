@@ -1,11 +1,43 @@
 img {
-  width: 350px;
-  height: 100px;
-  border-radius: 4px;
   padding-top: 10px;
+  padding-right: 10px;
 }
 
 .div-sidebar {
+  justify-items: center;
+  width: 200px;
   height: 100vh;
-  background-color: #283046;  
+  background-color: #e6e7fb;  
+}
+
+div.menu-holder {
+  justify-content: left;
+}
+
+ul.menu-item {
+  margin-left: -44px;
+}
+
+li.dash-back {
+  height: 30px;
+  width: 175px;
+  border-radius: 3px;
+  background-color: #00f;
+  align-items: center;
+  margin-left: 4px;
+}
+
+li.dash-text {
+  -webkit-text-fill-color: aliceblue;
+}
+
+Link.dash-link {
+  padding-top: 10px;
+}
+
+span.icon-span {
+  display: inline-flex;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
 }

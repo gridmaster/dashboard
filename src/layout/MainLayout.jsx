@@ -8,8 +8,9 @@ import '../assets/css/Main.css';
 const MainLayout = () => {
     return (
         <div id="outer">
-            
+
                 <div className="parent_div_1" id="inner">
+
                     <div id="sidebar"><Sidebar /></div>
                     <div id="content">
                             <Outlet />
