@@ -1,0 +1,33 @@
+
+h1 {
+    justify-content: center;
+}
+
+
+.sizeing {
+    display: flex;
+    margin-bottom: 1px;
+    justify-content: center;
+}
+
+.admin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.admin-pic {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+
+img {
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+}

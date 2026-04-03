@@ -1,0 +1,11 @@
+img {
+  width: 350px;
+  height: 100px;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+.div-sidebar {
+  height: 100vh;
+  background-color: #283046;  
+}
