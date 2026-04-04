@@ -22,17 +22,48 @@ li.dash-back {
   height: 30px;
   width: 175px;
   border-radius: 3px;
-  background-color: #00f;
   align-items: center;
   margin-left: 4px;
+  margin-top: 12px;
 }
 
-li.dash-text {
+li.dash-main {
+  background-color: #00f;
+}
+
+li.dash-sub {
+  background-color: #e6e7fb;
+}
+
+li.dash-text-aliceblue {
+  position: relative;
   -webkit-text-fill-color: aliceblue;
 }
 
-Link.dash-link {
-  padding-top: 10px;
+li.dash-text-black {
+  position: relative;
+  -webkit-text-fill-color: black;
+}
+
+li:hover { cursor:pointer }
+
+.dash-link {
+  display: flex;
+  margin-top: -9px;
+  padding-top: 5px;
+}
+
+.dash-icon { color: white; }
+
+.dash-select {
+  display: flex;
+  margin-top: -9px;
+  padding-top: 5px;
+}
+
+.select-icon { 
+  background-color: #e6e7fb;
+  color: black; 
 }
 
 span.icon-span {
@@ -41,3 +72,10 @@ span.icon-span {
   padding-right: 5px;
   padding-left: 5px;
 }
+
+span.hover-mouse {
+  position: absolute;
+  top: 6px;
+  left: 27px;
+}
+

@@ -11,7 +11,8 @@ const Sidebar = () => {
         const navs = getNav('admin')
         setAllNav(navs)
     },[])
-    //console.log(allNav)
+    console.log(pathname)
+    console.log(allNav)
 
     return (
         <div>
@@ -28,10 +29,12 @@ const Sidebar = () => {
                             <ul className='menu-item'>
                                 {
                                     allNav.map((n,i) => 
-                                        <li key={i} className='dash-back dash-text'>
-                                            <Link to={n.path} className={ 'dash-link' }>
-                                            <span className='icon-span'>{n.icon}</span>
-                                            <span>{n.title}</span>
+                                        <li key={i} className={`${pathname === n.path ? 'dash-back dash-text-aliceblue dash-main' : 'dash-back dash-text-black dash-sub'}`}>
+                                            
+                                            <Link to={n.path} 
+                                                    className={`${pathname === n.path ? 'dash-link dash-icon' : 'dash-select select-icon'}`}>
+                                                <span className='icon-span'>{n.icon}</span>
+                                                <span className='hover-mouse'>{n.title}</span>
                                             </Link>
                                         </li>
                                     )
