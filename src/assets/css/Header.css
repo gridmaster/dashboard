@@ -2,11 +2,30 @@
     width: 80%;
 }
 
+.span-hide-text {
+  display: none;
+}
+
+.span-show-text {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.show-text {
+  content: " Hide sidebar";
+} 
+
+.hide-text {
+  content: " Show sidebar";
+}
+
 .btn {
   height: 28px;
   width: 28px;
   margin: 5px;
-  background-color: #b1addf;
+  background-color: #e6e7fb;
   color: black;
   font-size: 16px;
   cursor: pointer;
@@ -15,7 +34,8 @@
 }
 
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #00f;
+  color: white;
 }
 
 .responsive-div {

@@ -17,7 +17,7 @@ const MainLayout = () => {
                 
                 <div className="parent_div_1" id="inner">
 
-                    <div id="sidebar" className={`${showSidebar === true ? 'show-sidebar' : 'hide-sidebar'}`}>
+                    <div id="sidebar" className={`${showSidebar === true ? 'show-sidebar' : 'hide-sidebar'}`} >
                         <Sidebar  />
                     </div>  
                     
