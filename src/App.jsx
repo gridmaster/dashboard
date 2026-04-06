@@ -6,8 +6,6 @@ import { getRoutes } from './router/routes';
 function App() {
 
   const [allRoutes, setAllRoutes] = useState([...publicRoutes])
-  //console.log("allroutes: " + allRoutes)
-
 
   useEffect(() => {
     const routes = getRoutes()
@@ -16,7 +14,6 @@ function App() {
   },[])
 
   return <Router allRoutes= {allRoutes} />
-
 }
 
 export default App;

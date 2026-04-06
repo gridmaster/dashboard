@@ -1,0 +1,62 @@
+.header {
+    width: 80%;
+}
+
+.btn {
+  height: 28px;
+  width: 28px;
+  margin: 5px;
+  background-color: #b1addf;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.responsive-div {
+   width: 80vw; 
+   margin: 1% auto;      
+}
+
+.show-list-icon {
+  margin-top: 4px;
+  margin-left: -2px;
+}
+
+.div-inner-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    height: 65px;
+    background-color: #b1addf;
+    margin: 8px;
+
+}
+
+.main-header-span {
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.xxxxheader {
+  float: left;
+  background: #efefef;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 100px;
+}
+
+.xxxheader-right {
+  overflow: hidden; 
+  background-color: #000;
+  height: 100px;
+}

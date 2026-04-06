@@ -3,7 +3,17 @@ img {
   padding-right: 10px;
 }
 
+.show-sidebarx {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .div-sidebar {
+  display: block;
   justify-items: center;
   width: 200px;
   height: 100vh;
@@ -40,12 +50,23 @@ li.dash-text-aliceblue {
   -webkit-text-fill-color: aliceblue;
 }
 
+#arrow i {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+#arrow:hover i {
+  left: 3px;
+  top: 3px;
+}
+
 li.dash-text-black {
   position: relative;
   -webkit-text-fill-color: black;
 }
 
-li:hover { cursor:pointer }
+.hover-mouse { cursor: pointer }
 
 .dash-link {
   display: flex;
@@ -61,9 +82,26 @@ li:hover { cursor:pointer }
   padding-top: 5px;
 }
 
-.select-icon { 
+.logoff-boarder {
+  width: 175;
+  height: 30px;
+  border: none;
   background-color: #e6e7fb;
+}
+
+.select-icon { 
   color: black; 
+}
+
+.span-logoff {
+  margin-right: 9px;
+}
+
+.logoff-icon { 
+  color: black; 
+  padding-left: 5px;
+  margin-right: 5px;
+
 }
 
 span.icon-span {
