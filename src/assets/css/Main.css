@@ -1,6 +1,6 @@
 
 /* #outer {width:100%; margin:0 auto;} */
-#outer {display: flex; width: 100vw;}
+#outer {display: flex; width: 100vw; height:vh}
 #inner {overflow:hidden;}
 #header {min-height:40px; background:#bbb}
 #content {min-width: 100vw; min-height:100vh; float:right; background:lightblue}

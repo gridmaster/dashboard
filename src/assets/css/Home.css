@@ -1,8 +1,9 @@
 
 h1 {
-    justify-content: center;
+    display: flex;
+    padding-top: 150px;
+    padding-left: 8px;
 }
-
 
 .sizeing {
     display: flex;
