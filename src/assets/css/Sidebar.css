@@ -50,6 +50,10 @@ li.dash-text-aliceblue {
   -webkit-text-fill-color: aliceblue;
 }
 
+li::hover {
+  background-color: #09062c;
+}
+
 #arrow i {
   position: relative;
   top: 0;
@@ -76,6 +80,7 @@ span:hover {
 
 a:hover {
   background-color: #b1addf;
+  padding-bottom: 7px;
 }
 
 .dash-link {
