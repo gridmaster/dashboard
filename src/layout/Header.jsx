@@ -17,6 +17,14 @@ const Header = ({showSidebar, setShowSidebar}) => {
                 <span className={`${showSidebar === true ? 'span-show-text left-free' : 'span-hide-text left-sb-anchored'}`} > Hide sidebar</span>
                 <span className={`${showSidebar !== true ? 'span-show-text left-free' : 'span-hide-text '}`} > Show sidebar</span>
 
+            <div className='header-content'>
+                <div className='header-user-ids'>
+                    <span className='header-user'>What up!</span>
+                    <span className='header-user'>SUCKERS!</span>
+                </div>
+                <img className='header-image' src="http://localhost:3000/images//admin image 1.jpg" alt="butt ugly!"></img>
+            </div>
+
             </div>
         </div>
     );

@@ -1,5 +1,39 @@
 .header {
     width: 80%;
+    display: 'flex';
+    justify-content: 'space-between';
+    align-items: 'center';
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: -6px;
+border-radius: 8px;
+}
+
+.header-user-ids {
+  display: flex;
+  flex-direction: column;
+  height: 38px;
+  margin: auto;
+  padding-right: 8px;
+
+}
+
+.header-image {
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.header-user {
+  text-align: right;
+  height: 20px;
+
 }
 
 .admin-header {
