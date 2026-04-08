@@ -16,6 +16,26 @@
   left: 208px;
 }
 
+.left-free {
+  left: 208px;
+}
+
+.left-sb-anchored {
+  position: absolute;
+  left: 5px;
+  margin-top: 12px;
+}
+
+.hidden-right-anchored {
+  position: absolute;
+  right: -8px;
+}
+
+.hidden-left-anchored {
+  position: absolute;
+  left: 208px;
+}
+
 .div-user-info {
   display: flex;
   width: 200px;
@@ -30,7 +50,6 @@
   justify-content: right;
 }
 
-
 .span-user-infoo {
   display: flex;
   width: 100%;
@@ -44,6 +63,7 @@
 
 .span-show-text {
   display: block;
+  width: 200px;
   font-size: 12px;
   font-weight: bold;
   text-decoration: underline;

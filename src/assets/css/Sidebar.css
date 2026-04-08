@@ -66,7 +66,17 @@ li.dash-text-black {
   -webkit-text-fill-color: black;
 }
 
-.hover-mouse { cursor: pointer }
+.hover-mouse { 
+  cursor: pointer;
+ }
+
+span:hover {
+  background-color: #b1addf;
+}
+
+a:hover {
+  background-color: #b1addf;
+}
 
 .dash-link {
   display: flex;

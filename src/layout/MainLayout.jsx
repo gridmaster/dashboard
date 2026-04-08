@@ -10,7 +10,7 @@ const MainLayout = () => {
 
     const [showSidebar, setShowSidebar] = useState(true);
     console.log("Welp? " + showSidebar);
-    console.log(`${showSidebar === true ? 'show-sidebar' : 'hide-sidebar'}`);
+    console.log(`${showSidebar === true ? 'show-sidebar' : 'hide-sidebar left-sb-anchored'}`);
 
     return (
         <div id="outer">

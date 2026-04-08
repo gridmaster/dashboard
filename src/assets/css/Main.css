@@ -8,12 +8,15 @@
 
 .show-sidebar {
   display: revert;
-
 } 
 
 .hide-sidebar {
   display: none;
+}
 
+.left-sb-anchored {
+  position: absolute;
+  left: 8px;
 }
 
 .parent_div_1, .parent_div_2, .parent_div_3 {
