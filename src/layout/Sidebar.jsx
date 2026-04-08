@@ -25,8 +25,8 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
             <div>
                 <div className='div-sidebar' >
                     <div>
-                        <Link to='/Home'>
-                            <img className='icon' src="http://localhost:3000/images/longfellow-logo-black.png" alt="sidebar img"></img>
+                        <Link className='no-hover' to='/Home'>
+                            <img className='icon no-hover' src="http://localhost:3000/images/longfellow-logo-black.png"  alt="sidebar img"></img>
                         </Link>
                     </div>
                         <div className='menu-holder'>

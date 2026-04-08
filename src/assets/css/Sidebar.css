@@ -50,7 +50,11 @@ li.dash-text-aliceblue {
   -webkit-text-fill-color: aliceblue;
 }
 
-li::hover {
+.no-hover {
+  background-color: #e6e7fb;
+}
+
+a::hover {
   background-color: #09062c;
 }
 
