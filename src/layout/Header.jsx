@@ -1,8 +1,14 @@
 import React, { useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import '../assets/css/Header.css';
 import { FaList } from "react-icons/fa";
 
 const Header = ({showSidebar, setShowSidebar}) => {
+
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Home"); 
+    }
 
     return (
         
@@ -22,7 +28,8 @@ const Header = ({showSidebar, setShowSidebar}) => {
                     <span className='header-user'>What up!</span>
                     <span className='header-user'>SUCKERS!</span>
                 </div>
-                <img className='header-image' src="http://localhost:3000/images//admin image 1.jpg" alt="butt ugly!"></img>
+        
+                <button className='image-button' onClick={handleClick}></button>
             </div>
 
             </div>

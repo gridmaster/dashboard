@@ -10,7 +10,7 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: -6px;
-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .header-user-ids {
@@ -23,12 +23,38 @@ border-radius: 8px;
 }
 
 .header-image {
+
   align-items: center;
   height: 60px;
   width: 60px;
   margin-right: 10px;
+  margin-top: 4px;
   border-radius: 8px;
+  overflow: hidden;
   padding: 0;
+}
+
+.a-tag-still {
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.image-button {
+  background-image: url('http://localhost:3000/images//admin image 1.jpg');
+  background-size: cover; /* Resizes image to cover the button */
+  background-repeat: no-repeat;
+  width: 60px;  /* Set size to match your image */
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 12px;
 }
 
 .header-user {
@@ -144,7 +170,7 @@ border-radius: 8px;
 
 .responsive-div {
    width: 80vw; 
-   margin: 1% auto;      
+   margin: 1% auto;
 }
 
 .show-list-icon {
