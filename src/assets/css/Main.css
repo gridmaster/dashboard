@@ -1,6 +1,6 @@
 
 /* #outer {width:100%; margin:0 auto;} */
-#outer {display: flex; width: 100vw; height:vh}
+#outer {display: flex; width: 100vw; height:100vh}
 #inner {overflow:hidden;}
 #header {min-height:40px; background:#bbb}
 #content {min-width: 100vw; min-height:100vh; float:right; background:lightblue}
@@ -10,7 +10,11 @@
   display: revert;
 } 
 
-.hide-sidebar {
+.sidebar-height {
+  height: 100vh;
+}
+
+  .hide-sidebar {
   display: none;
 }
 

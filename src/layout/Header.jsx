@@ -7,8 +7,9 @@ const Header = ({showSidebar, setShowSidebar}) => {
 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/Home"); 
+        navigate("/"); 
     }
+    console.log('show SB = ' + showSidebar);
 
     return (
         

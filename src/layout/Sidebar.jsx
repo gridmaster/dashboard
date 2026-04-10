@@ -12,9 +12,12 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
         const navs = getNav('admin')
         setAllNav(navs)
     },[])
-    console.log(pathname)
+    console.log('pathname = ' + pathname)
     console.log(allNav.length)
-    console.log(allNav)
+    console.log(allNav[0])
+    console.log(allNav[0]?.title)
+
+    if(allNav.length > 0) console.log(allNav[0].path);
 
     return (
         <div>
@@ -22,7 +25,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
 
             </div>
 
-            <div>
+            <div className='sidebar-height' >
                 <div className='div-sidebar' >
                     <div>
                         <Link className='no-hover' to='/Home'>
@@ -33,10 +36,10 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
                             <ul className='menu-item'>
                                 {
                                     allNav.map((n,i) => 
-                                        <li key={i} className={`${pathname === n.path ? 'dash-back dash-text-aliceblue dash-main' : 'dash-back dash-text-black dash-sub'}`}>
+                                        <li key={i} className={`${allNav[i]?.title === 'Dashboard' ? 'dash-back dash-text-aliceblue dash-main' : 'dash-back dash-text-black dash-sub'}`}>
 
                                             <Link to={n.path}
-                                                    className={`${pathname === n.path ? 'dash-link dash-icon' : 'dash-select select-icon'}`}>
+                                                    className={`${allNav[i]?.title === 'Dashboard' ? 'dash-link dash-icon' : 'dash-select select-icon'}`}>
 
                                                 <span className='icon-span'>{n.icon}</span>
                                                 <span className='hover-mouse'>{n.title}</span>
