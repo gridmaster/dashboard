@@ -1,7 +1,7 @@
 .header {
     width: 80%;
-    display: 'flex';
-    justify-content: 'space-between';
+    display: flex;
+    justify-content: space-between;
     align-items: 'center';
 }
 
@@ -19,11 +19,15 @@
   height: 38px;
   margin: auto;
   padding-right: 8px;
+}
 
+.header-input {
+  align-items: left;
+  border-left:1px solid;
+  height: 80%;
 }
 
 .header-image {
-
   align-items: center;
   height: 60px;
   width: 60px;
@@ -60,7 +64,6 @@
 .header-user {
   text-align: right;
   height: 20px;
-
 }
 
 .admin-header {
@@ -124,7 +127,7 @@
 
 .span-show-text {
   display: block;
-  width: 200px;
+  width: 80px;
   font-size: 12px;
   font-weight: bold;
   text-decoration: underline;
@@ -139,10 +142,12 @@
 }
 
 .header-text {
-  margin: 3px 2px 3px 14px;
-  outline: none;
-  border: none;
+  margin: 17px 2px 3px 12px;
+  color: #423d72;
+  border-width: 1px;
+  border-color: black;
   border-radius: 3px;
+  background-color: #b1addf;
 }
 
 .user-info {
@@ -156,7 +161,7 @@
   width: 28px;
   margin: 5px;
   background-color: #e6e7fb;
-  color: black;
+  color: #423d72;
   font-size: 16px;
   cursor: pointer;
   border: 1px solid black;
@@ -184,9 +189,9 @@
     align-items: center;
     border-radius: 5px;
     height: 65px;
+    min-width: 400px;
     background-color: #b1addf;
     margin: 6px;
-
 }
 
 .main-header-span {

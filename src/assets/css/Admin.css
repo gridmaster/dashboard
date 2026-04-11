@@ -1,3 +1,93 @@
+.dash-content-first {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 6px;
+}
+
+.no-hover {
+  pointer-events: none;
+}
+
+.dash-summary-cards {
+    display: flex;
+    overflow: hidden;
+    height: 60px;
+    width: 240px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card-BGColor-1 {
+    background-color: #fae8e8;
+}
+
+.card-IconColor-1 {
+    background-color: #fa0305;
+}
+
+.card-BGColor-2 {
+    background-color: #fde2ff;
+}
+
+.card-IconColor-2 {
+    background-color: #760077;
+}
+
+.card-BGColor-3 {
+    background-color: #e9feea;
+}
+
+.card-IconColor-3 {
+    background-color: #038000;
+}
+
+.card-BGColor-4 {
+    background-color: #ecebff;
+}
+
+.card-IconColor-4 {
+    background-color: #0200f8;
+}
+
+.sum-cards {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;;
+    margin-left: 20px;
+}
+
+.dash-cards {
+    display: flex;
+    overflow: hidden;;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    color: #5c5a5a;
+    gap: 14px;
+}
+
+.dash-title {
+    display: flex;
+    overflow: hidden;;
+    height: 16px;
+    margin-left: 12px;
+    text-decoration: underline;
+    font-weight: 650;
+}
+
+.dash-data {
+    display: flex;
+    overflow: hidden;;
+    height: 16px;
+    margin-left: 12px;   
+    font-weight: 450;
+    justify-content: center;
+}
+
 .sizeing {
     display: flex;
     margin-bottom: 1px;
@@ -20,10 +110,29 @@
     justify-content: center;
 }
 
-img {
+.img-small {
+  display: flex;
   width: 100px;
   height: 100px;
   border-radius: 4px;
+}
+
+.img-icon {
+  display: flex;
+  width: 40px;
+  height: 47px;
+  justify-self: center;
+  justify-items: right;
+  border-radius: 44%;
+}
+
+.img-position-icon {
+    display: flex;
+    width: 40px;
+    height: 24px;
+    justify-self: center;
+    align-self: center;
+    color: wheat;
 }
 
 img-shape {

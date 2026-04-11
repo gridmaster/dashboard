@@ -24,14 +24,18 @@ const Header = ({showSidebar, setShowSidebar}) => {
                 <span className={`${showSidebar === true ? 'span-show-text left-free' : 'span-hide-text left-sb-anchored'}`} > Hide sidebar</span>
                 <span className={`${showSidebar !== true ? 'span-show-text left-free' : 'span-hide-text '}`} > Show sidebar</span>
 
-            <div className='header-content'>
-                <div className='header-user-ids'>
-                    <span className='header-user'>What up!</span>
-                    <span className='header-user'>SUCKERS!</span>
+                <div className='header-input'>
+                    <input className='header-text' type='text' />
                 </div>
-        
-                <button className='image-button' onClick={handleClick}></button>
-            </div>
+
+                <div className='header-content'>
+                    <div className='header-user-ids'>
+                        <span className='header-user'>What up!</span>
+                        <span className='header-user'>SUCKERS!</span>
+                    </div>
+            
+                    <button className='image-button' onClick={handleClick}></button>
+                </div>
 
             </div>
         </div>

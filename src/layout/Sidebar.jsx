@@ -28,7 +28,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
             <div className='sidebar-height' >
                 <div className='div-sidebar' >
                     <div>
-                        <Link className='no-hover' to='/Home'>
+                        <Link className='no-hover' to='/admin/dashboard/sellers'>
                             <img className='icon no-hover' src="http://localhost:3000/images/longfellow-logo-black.png"  alt="sidebar img"></img>
                         </Link>
                     </div>
