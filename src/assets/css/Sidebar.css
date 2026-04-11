@@ -20,10 +20,6 @@ img {
   background-color: #e6e7fb;  
 }
 
-div.menu-holder {
-  justify-content: left;
-}
-
 ul.menu-item {
   margin-left: -44px;
 }

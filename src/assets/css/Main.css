@@ -4,7 +4,7 @@
 #inner {overflow:hidden;}
 #header {min-height:40px; background:#bbb}
 #content {min-width: 100vw; min-height:100vh; float:right; background:lightblue}
-#sidebar {width:260px; min-height:100vh; float:left; color:#ddd}
+#sidebar {color:#ddd}
 
 .show-sidebar {
   display: revert;
@@ -14,7 +14,7 @@
   height: 100vh;
 }
 
-  .hide-sidebar {
+.hide-sidebar {
   display: none;
 }
 

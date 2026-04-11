@@ -32,7 +32,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
                             <img className='icon no-hover' src="http://localhost:3000/images/longfellow-logo-black.png"  alt="sidebar img"></img>
                         </Link>
                     </div>
-                        <div className='menu-holder'>
+                        <div>
                             <ul className='menu-item'>
                                 {
                                     allNav.map((n,i) => 
