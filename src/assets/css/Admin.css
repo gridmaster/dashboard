@@ -9,10 +9,44 @@
   pointer-events: none;
 }
 
+.seller-page {
+    display: flex;
+}
+
+.div-wrap-test {
+    border: 2px solid black;
+    width:85%;
+    height: 30px;
+    margin-top: 7px;
+    padding-right: 8px;
+}
+
+.div-chart-outer {
+    /* border: 2px solid black; */
+    width: 77%;
+    height: 50px;
+    margin-top: 7px;
+    padding: 8px 8px 8px 20px;
+}
+
+.div-container {
+    display: inline-block;
+    width: 62%;
+    min-width: 500px;
+    height: 35px;
+    background-color: #6a5fdf;
+    border-radius: 4px;
+}
+
+.div-chart {
+    box-sizing: border-box;
+    min-width: 200px;
+}
+
 .dash-summary-cards {
     display: flex;
     overflow: hidden;
-    height: 60px;
+    height: 64px;
     width: 240px;
     padding-top: 10px;
     margin-top: 10px;

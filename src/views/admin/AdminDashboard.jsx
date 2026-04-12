@@ -66,6 +66,15 @@ const AdminDashboard = () => {
                 </div>
             </div>
 
+            <div className='div-chart-outer'>
+                <div className='div-container'>
+                    <div className='div-chart'>
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     );
 };
