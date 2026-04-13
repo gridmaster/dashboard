@@ -135,14 +135,13 @@ const AdminDashboard = () => {
             </div>
 
             <div className='div-chart-outer'>
-                <div className='div-container'>
-                    <div className='div-chart'>
-                        <Chart options={state.options} series={state.series} type='bar' height={350} />
-                    </div>
+
+                <div class="grid-container">
+                    <div class="item1"><Chart options={state.options} series={state.series} type='bar' height={350} /></div>
+                    <div class="item2"><Chart options={state.options} series={state.series} type='bar' height={350} /></div>
                 </div>
+                
             </div>
-
-
         </div>
     );
 };
