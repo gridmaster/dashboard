@@ -6,6 +6,7 @@ import { MdProductionQuantityLimits } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import { GiTakeMyMoney } from "react-icons/gi";
 import Chart from 'react-apexcharts';
+import { Link } from 'react-router-dom';
 
 const AdminDashboard = () => {
 
@@ -137,8 +138,47 @@ const AdminDashboard = () => {
             <div className='div-chart-outer'>
 
                 <div class="grid-container">
-                    <div class="item1"><Chart options={state.options} series={state.series} type='bar' height={350} /></div>
-                    <div class="item2"><Chart options={state.options} series={state.series} type='bar' height={350} /></div>
+                    <div class="item1">
+                        <Chart className="item1 chart-position" options={state.options} series={state.series} type='bar' height={350} />
+                    </div>
+                    <div class="item2">
+                        <div className='div-seller-msg'>
+                            <span class="recient-sellers recient-format">Recient Seller Message</span>
+                            <Link class="view-all-sellers">'View All'</Link>
+                        </div>
+                        <div className='card-seller-message'>
+                            <img className='seller-msg-icon' src="http://localhost:3000/images/BB.jpeg" alt='googlie mooglie!'></img>
+                            <div className='admin-message-block'>
+                                <Link className="view-all-sellers admin-link">Admin</Link>
+                                <span className="time-since-sent">2 days ago</span>
+                                <div className='admin-message'>How are you?</div>
+                            </div>
+                        </div>
+                        <div className='card-seller-message'>
+                            <img className='seller-msg-icon' src="http://localhost:3000/images/admin image 1.jpg" alt='googlie mooglie!'></img>
+                           <div className='admin-message-block'>
+                                <Link className="view-all-sellers admin-link">Admin</Link>
+                                <span className="time-since-sent">1 day ago</span>
+                                <div className='admin-message'>Great googlie mooglie!</div>
+                            </div>
+                        </div>
+                        <div className='card-seller-message'>
+                            <img className='seller-msg-icon' src="http://localhost:3000/images/Bart.png" alt='googlie mooglie!'></img>
+                           <div className='admin-message-block'>
+                                <Link className="view-all-sellers admin-link">Admin</Link>
+                                <span className="time-since-sent">2 days ago</span>
+                                <div className='admin-message'>Miss me yet??</div>
+                            </div>
+                         </div>
+                        <div className='card-seller-message'>
+                            <img className='seller-msg-icon' src="http://localhost:3000/images/dh.jpg" alt='googlie mooglie!'></img>
+                           <div className='admin-message-block'>
+                                <Link className="view-all-sellers admin-link">Admin</Link>
+                                <span className="time-since-sent">4 days ago</span>
+                                <div className='admin-message'>Kiss me baby!!</div>
+                            </div>
+                         </div>
+                    </div>
                 </div>
                 
             </div>

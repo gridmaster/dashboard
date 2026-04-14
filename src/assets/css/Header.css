@@ -49,7 +49,7 @@
 }
 
 .image-button {
-  background-image: url('http://localhost:3000/images//admin image 1.jpg');
+  background-image: url('http://localhost:3000/images/admin image 1.jpg');
   background-size: cover; /* Resizes image to cover the button */
   background-repeat: no-repeat;
   width: 60px;  /* Set size to match your image */
@@ -126,7 +126,7 @@
 
 .span-show-text {
   display: block;
-  width: 80px;
+  width: 48px;
   font-size: 12px;
   font-weight: bold;
   text-decoration: underline;

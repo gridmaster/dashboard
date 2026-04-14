@@ -23,7 +23,7 @@
 
 .div-chart-outer {
     /* border: 2px solid black; */
-    width: 77%;
+    width: 80%;
     height: 50px;
     margin-top: 7px;
     padding: 8px 8px 8px 20px;
@@ -52,17 +52,92 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-gap: 10px;
+  width: 1077px;
+  min-width: 700px;
+  border-radius: 5px;
   background-color: #2196F3;
   padding: 10px;
 
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
+/*  background-color: rgba(255, 255, 255, 0.8); */
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-size: 30px;
+    padding-top: 18px;
     margin-right: 10px;
+    max-height: 555px;
+}
+
+.item1 {
+    background-color: #6a5fdf;
+    border-radius: 5px;
+}
+.item2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #6a5fdf;
+    justify-content: space-between;
+}
+
+.div-seller-msg {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;;
+}
+
+.recient-sellers {
+    background-color: #6a5fdf;
+    font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.recient-format {
+    width: 160px;
+    min-width: 160px;
+    height: 20px;
+}
+
+.view-all-sellers {
+    font-size: 16px;
+    width: 64px;
+    min-width: 64px;
+    height: 20px;
+}
+
+.admin-link {
+    float: left;
+    align-content: center;
+    margin: 4px 4px 0px 4px;
+    color: wheat;
+}
+
+.time-since-sent {
+    font-size: medium;
+    float: right;
+    margin: 6px 14px 5px 5px;
+    color: wheat;
+}
+
+.chart-position {
+    margin-top: 2px;
+}
+
+.admin-message {
+    display: flex;
+    color: lightblue;
+    background-color: slategray;
+    border-radius: 5px;
+    font-size: medium;
+    width: 280px;
+    height: 24px;
+    margin: 8px;
+    padding-top: 4px;
+    padding-left: 5px;
 }
 
 .dash-summary-cards {
@@ -111,6 +186,7 @@
 
 .sum-cards {
     display: flex;
+    width: 265px;
     min-width: 0;
     overflow: hidden;;
     margin-left: 20px;
@@ -159,6 +235,17 @@
     object-fit: cover;
 }
 
+.card-seller-message {
+    display: block;
+    height: 70px;
+    min-width: 385px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+}
+
 .admin-pic {
     display: flex;
     width: 100px;
@@ -166,11 +253,36 @@
     justify-content: center;
 }
 
+.admin-message-block {
+    float: right;
+    width: 300px;
+    height: 65px;
+    margin-right: 4px;
+    margin-top: -64px;
+    background-color: #444;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
 .img-small {
   display: flex;
   width: 100px;
   height: 100px;
   border-radius: 4px;
+}
+
+.seller-msg-icon {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-left: 6px;
 }
 
 .img-icon {
