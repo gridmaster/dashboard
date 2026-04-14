@@ -180,6 +180,41 @@ const AdminDashboard = () => {
                          </div>
                     </div>
                 </div>
+
+                <div className='dash-bottom-outer'>
+                    <div className='div-bottom-flex'>
+                        <h2 className='h2-bottom'>Recent Orders</h2>
+                        <Link className='link-bottom'>View All</Link>
+                    </div>
+                        
+                    <div className='bottom-table-wrap'>
+
+                        <table className='bottom-table'>
+                            <thead className='bottom-table'>
+                                <tr>
+                                    <th scope='row' className='bottom-table-column'>Order Id</th>
+                                    <th scope='row' className='bottom-table-column'>Price</th>
+                                    <th scope='row' className='bottom-table-column'>Payment Status</th>
+                                    <th scope='row' className='bottom-table-column'>Order Status</th>
+                                    <th scope='row' className='bottom-table-column'>Active</th>                               
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {                                
+                                    [1,2,3,4,5].map((d, i) => <tr key={i}>
+                                    <td className='bottom-table-tr'>#34344</td>
+                                    <td className='bottom-table-tr'>$454</td>
+                                    <td className='bottom-table-tr'>Pending</td>
+                                    <td className='bottom-table-tr'>Pending</td>
+                                    <td className='bottom-table-tr'>View</td>
+                                </tr>)
+                                }
+                            </tbody>
+                        </table>
+                       
+                    </div>
+
+                </div>
                 
             </div>
         </div>
