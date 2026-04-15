@@ -190,7 +190,8 @@
     height: 65px;
     min-width: 400px;
     background-color: #b1addf;
-    margin: 6px;
+    margin: 6px 0px 6px 26px;
+    max-width: 1095px;
 }
 
 .main-header-span {
