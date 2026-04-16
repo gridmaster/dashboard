@@ -1,0 +1,8 @@
+.bottom-table {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    color: #d0d2d6;
+    text-transform: uppercase;
+    border: 2px solid slategray;
+}

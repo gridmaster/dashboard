@@ -74,7 +74,7 @@
 .bottom-table-wrap {
     position: relative;
     overflow-x: auto;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .bottom-table {
@@ -87,11 +87,14 @@
 }
 
 .bottom-table-column {
+height: 20px;
+    width: 12px;
     padding-inline: 3px;
     padding-block: 4px;
+    font-size: 16px;
 }
 
-.bottom-table-tr{
+.bottom-table-tr {
     padding-inline: 3px;
     padding-block: 4px;
     font-size: medium;

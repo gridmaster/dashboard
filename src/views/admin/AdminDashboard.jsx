@@ -137,14 +137,14 @@ const AdminDashboard = () => {
 
             <div className='div-chart-outer'>
 
-                <div class="grid-container">
-                    <div class="item1">
+                <div className="grid-container">
+                    <div className="item1">
                         <Chart className="item1 chart-position" options={state.options} series={state.series} type='bar' height={350} />
                     </div>
-                    <div class="item2">
+                    <div className="item2">
                         <div className='div-seller-msg'>
-                            <span class="recient-sellers recient-format">Recient Seller Message</span>
-                            <Link class="view-all-sellers">'View All'</Link>
+                            <span className="recient-sellers recient-format">Recient Seller Message</span>
+                            <Link className="view-all-sellers">'View All'</Link>
                         </div>
                         <div className='card-seller-message'>
                             <img className='seller-msg-icon' src="http://localhost:3000/images/BB.jpeg" alt='googlie mooglie!'></img>
