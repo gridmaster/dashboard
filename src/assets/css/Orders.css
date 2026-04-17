@@ -11,7 +11,10 @@ thead th {
 
 .on-hover-row:hover {
     background-color:hsl(from rgb(179, 171, 184) h s 85%);
-    border-radius: 5px;
+    width: 28px;
+    height: 24px;;
+    color: cornflowerblue;
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -37,11 +40,27 @@ thead th {
 
 .orders-detail-column {
     height: 20px;
-    width: 140px;
-    padding-inline: 3px;
+    width: 138px;
+    text-align: center;
+    padding-inline: 20px;
     padding-block: 4px;
     font-size: 16px;
-    color: black;
+    color: #e8e8e8;
+}
+
+ .text-color {
+    color: lightcoral;
+ } 
+
+.orders-order-detail {
+    display: block;
+    width: 1054px;
+    background-color: #aaf;
+}
+
+.orders-div-detail {
+    display: flex;
+    border: 1px solid lightcoral;
 }
 
 .orders-text-uppercase {
