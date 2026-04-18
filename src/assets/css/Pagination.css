@@ -1,0 +1,76 @@
+.page-nav-btn {
+    width: 22px;
+    height: 18px;
+    margin-right: 2px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbb;
+    color: black;
+    box-shadow: 3px 3px #888, 2px 2px #888, 1px 1px #888;
+    border: 1px solid #555;
+}
+
+.page-nav-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 3px 3px #555;
+    transform: translate(3px, 3px);
+
+}
+
+.inactive {
+    color: #ddd;
+    box-shadow: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-btn-bg-color {
+    background-color: lightskyblue;
+    text-shadow: 2px 2px 4px skyblue;
+    color: white;
+}
+
+.page-not-btn-bg-color {
+    background-color: darkslategray;
+    color: #d0d2d6;
+    cursor: pointer;
+}
+
+.page-btn {
+    display: flex;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn-bg-color:hover {
+    background-color: #87ceeb;
+    text-shadow: #65acc9;
+    color: white;
+}
+
+.page-ul-return {
+    gap: 3px;
+    justify-items: right;
+}
+
+.page-ul-return li {
+    list-style: none;
+}
+
+.page-pagination-btns {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.page-nav-group {
+    display: flex;
+    justify-content: right;
+    padding-right: 19px;  
+}

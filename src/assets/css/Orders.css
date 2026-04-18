@@ -22,12 +22,7 @@ thead th {
     pointer-events: none;
     background-color: cornflowerblue;
 }
-/* .orders-div-bottom {
-    width: 100%;
-    font-size: small;
-    text-align: center;
-    color: #d0d2d6;
-} */
+
 
 .orders-div {
     display: flex;
@@ -45,22 +40,34 @@ thead th {
     padding-inline: 20px;
     padding-block: 4px;
     font-size: 16px;
+    border-bottom: 1px solid rgb(106, 163, 68);
     color: #e8e8e8;
 }
 
  .text-color {
     color: lightcoral;
+    border-bottom: none;
  } 
 
 .orders-order-detail {
     display: block;
     width: 1054px;
+    padding-top: 4px;
+    padding-left: 4px;
     background-color: #aaf;
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(106, 163, 68);
+    border-right: 3px solid rgb(106, 163, 68);
+}
+
+.hidden {
+    display: none;
 }
 
 .orders-div-detail {
     display: flex;
-    border: 1px solid lightcoral;
+    border: 1px solid lightblue;
+    border-bottom: none;
 }
 
 .orders-text-uppercase {
