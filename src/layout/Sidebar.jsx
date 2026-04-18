@@ -8,16 +8,13 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
 
     const { pathname } = useLocation()
     const [allNav,setAllNav] = useState([])
+
     useEffect(() => {
         const navs = getNav('admin')
         setAllNav(navs)
     },[])
-    console.log('pathname = ' + pathname)
-    console.log(allNav.length)
-    console.log(allNav[0])
-    console.log(allNav[0]?.title)
 
-    if(allNav.length > 0) console.log(allNav[0].path);
+    // if(allNav.length > 0) console.log(allNav[0].path);
 
     return (
         <div>

@@ -9,7 +9,6 @@ function App() {
 
   useEffect(() => {
     const routes = getRoutes()
-    console.log(routes.children)
     setAllRoutes([...allRoutes, routes])
   },[])
 

@@ -9,7 +9,6 @@ const Header = ({showSidebar, setShowSidebar}) => {
     const handleClick = () => {
         navigate("/"); 
     }
-    console.log('show SB = ' + showSidebar);
 
     return (
         

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { FaArrowsDownToLine } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-import '../../assets/css/Orders.css'
-import '../../assets/css/Admin.css';
-import '../../assets/css/Home.css';
 import Pagination from '../Pagination';
 
+import '../../assets/css/Orders.css'
+
 const Orders = () => {
+
     const [currentPage, setCurrentPage] = useState(1)
     const [searchValue, setSearchValue] = useState('')
     const [parPage, setParPage] = useState(5)
     const [show, setShow] = useState(false)
-console.log("setCP = " + setCurrentPage)
+
     return (
         <div className='orders-div-content'>
 

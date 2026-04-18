@@ -55,7 +55,7 @@ import '../assets/css/Pagination.css'
         return (
             <div className='page-nav-group'>
                 <ul className='page-ul-return page-pagination-btns'>
-                    <li className={0 < totalItem ? 'page-nav-btn' : 'page-nav-btn inactive'}><MdOutlineKeyboardDoubleArrowLeft /></li> 
+                    <li className={totalItem <= parPage ? 'page-nav-btn inactive' : 'page-nav-btn'}><MdOutlineKeyboardDoubleArrowLeft /></li> 
                     <li className={1 <= totalItem ? 'page-nav-btn' : 'page-nav-btn inactive'}>1</li> 
                     <li className={2 <= totalItem ? 'page-nav-btn' : 'page-nav-btn inactive'}>2</li> 
                     <li className={3 <= totalItem ? 'page-nav-btn' : 'page-nav-btn inactive'}>3</li>   
