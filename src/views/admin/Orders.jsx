@@ -9,7 +9,7 @@ const Orders = () => {
 
     const [currentPage, setCurrentPage] = useState(1)
     const [searchValue, setSearchValue] = useState('')
-    const [parPage, setParPage] = useState(5)
+    const [perPage, setParPage] = useState(5)
     const [show, setShow] = useState(false)
 
     return (
@@ -140,9 +140,9 @@ const Orders = () => {
                     <Pagination 
                         pageNumber = {currentPage}
                         setPageNumber = {setCurrentPage}
-                        totalItem = {10}
-                        parPage = {parPage}
-                        showItem = {4}
+                        totalItem = {13}
+                        perPage = {perPage}
+                        showItem = {13}
                     />
                 </div> 
             </div>

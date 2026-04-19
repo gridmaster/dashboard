@@ -68,7 +68,7 @@
 }
 
 .inactive {
-    color: #ddd;
+    color: gray;
     box-shadow: none;
     cursor: not-allowed;
     pointer-events: none;
