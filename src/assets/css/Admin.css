@@ -87,7 +87,7 @@
 }
 
 .bottom-table-column {
-height: 20px;
+    height: 20px;
     width: 12px;
     padding-inline: 3px;
     padding-block: 4px;
@@ -132,7 +132,6 @@ height: 20px;
     padding-right: 12px;
     align-items: center;
 }
-
 
 .item1 {
     background-color: #6a5fdf;

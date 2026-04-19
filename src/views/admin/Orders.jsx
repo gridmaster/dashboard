@@ -139,10 +139,10 @@ const Orders = () => {
 
                     <Pagination 
                         pageNumber = {currentPage}
-                        setPageNumber = {setSearchValue}
-                        totalItem = {3}
+                        setPageNumber = {setCurrentPage}
+                        totalItem = {10}
                         parPage = {parPage}
-                        showItem = {5}
+                        showItem = {4}
                     />
                 </div> 
             </div>

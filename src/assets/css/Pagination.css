@@ -1,5 +1,53 @@
+/* Paging css for orders list */
+
+.page-btn-ul {
+    display: flex;
+    gap: 5px;
+    justify-content: right;
+    padding-right: 50px;
+}
+
+.page-btn-li {
+    cursor: pointer;;
+    list-style-type: none;
+}
+
+/* <li onClick={()=>setPageNumber(i)} className={` ${pageNumber === i ? 'bg-indigo-300 shadow-lg shadow-indigo-300/50 text-white' : 'bg-slate-600 hover:bg-indigo-400 shadow-lg hover:shadow-indigo-500/50 hover:text-white text-[#d0d2d6]'} w-[33px] h-[33px] rounded-full flex justify-center items-center cursor-pointer `}> */
+
+/* w-[33px] h-[33px] rounded-full flex justify-center items-center cursor-pointer  */
+.page-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+    color: white;
+}
+
+/* className={` ${pageNumber === i ? 'bg-indigo-300 shadow-lg shadow-indigo-300/50 text-white' */
+.page-btn-1 {
+    background-color: blue;
+    cursor: default;
+}
+
+/* 'bg-slate-600 hover:bg-indigo-400 shadow-lg hover:shadow-indigo-500/50 hover:text-white text-[#d0d2d6]' */
+.page-btn-2 {
+    background-color: lightblue;
+ }
+
+.page-btn-2:hover {
+    background-color: #a9a9a9; 
+    color: #d0d2d6;
+    cursor: pointer;
+}
+
 .page-nav-btn {
-    width: 22px;
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
     height: 18px;
     margin-right: 2px;
     cursor: pointer;
@@ -14,10 +62,9 @@
 }
 
 .page-nav-btn:active {
-    background-color: #3e8e41;
+    background-color: #888;
     box-shadow: 3px 3px #555;
     transform: translate(3px, 3px);
-
 }
 
 .inactive {
@@ -39,14 +86,14 @@
     cursor: pointer;
 }
 
-.page-btn {
+/* .page-btn {
     display: flex;
     width: 33px;
     height: 33px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .page-btn-bg-color:hover {
     background-color: #87ceeb;
@@ -65,12 +112,12 @@
 
 .page-pagination-btns {
     display: flex;
-    width: 150px;
+    width: auto;
     justify-content: space-between;
 }
 
 .page-nav-group {
     display: flex;
     justify-content: right;
-    padding-right: 19px;  
+    padding-right: 13px;  
 }
