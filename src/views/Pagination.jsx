@@ -5,10 +5,9 @@ import { GiStopSign } from "react-icons/gi";
 
 import '../assets/css/Pagination.css'
 
+const Pagination = ({pageNumber, setPageNumber, totalItem, parPage, showItem}) => {
 
-const Pagination = ({pageNumber, setPageNumber, totalItem, perPage, showItem}) => {
-
-    let totalPage = Math.ceil(totalItem / perPage)
+    let totalPage = Math.ceil(totalItem / parPage)
     let startPage = pageNumber
 
     let dif = totalPage - pageNumber
@@ -17,23 +16,27 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, perPage, showItem}) =
     }
 
     let startBtn = pageNumber
-    let endBtn = startBtn-1 + perPage
+    let endBtn = startBtn-1 + parPage
     if( endBtn >= totalItem ) {
         startBtn = endBtn - 4
         endBtn = totalItem
     }
 
     if (startPage <= 0) {
-        console.log(startPage)
         startPage = 1
     }
 
     const createBtn = () => {
 
-        if(endBtn >= totalItem) startBtn = endBtn - (perPage - 1)    
-
+        if(endBtn >= totalItem) startBtn = endBtn - (parPage - 1)   
+             
+        console.log("sb = " + startBtn)
+        console.log("eb = " + endBtn)
+        console.log("pn = " + pageNumber)
+        
         const btns = []
         for (let i = startBtn; i <= endBtn; i++) {
+            console.log("i = " + i)
             btns.push(
                 <li key={i} onClick={()=>setPageNumber(i)} className={` ${pageNumber === i ? 'page-btn-1' : 'page-btn-2'} page-btn`}>
                     {i}                    
@@ -42,7 +45,6 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, perPage, showItem}) =
         }
         return btns
     }
-
     
     return (
         <ul className='page-btn-ul'>

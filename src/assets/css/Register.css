@@ -103,10 +103,17 @@ Div.outer-width {
     vertical-align: middle;
 }
 
+.th-admin-email {
+    padding-top: 30px;
+}
+
+.th-login-pad {
+    padding-top: 10px;
+}
+
 .th-style {
     display: flex;
     width: 200px;
-    padding-top: 10px;
     padding-left: 20px;
     text-align: left;
 }
@@ -163,7 +170,7 @@ Div.outer-width {
     display: flex;
     width: 80%;
     height: 25px;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     justify-content: center;

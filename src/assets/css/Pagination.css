@@ -4,7 +4,8 @@
     display: flex;
     gap: 5px;
     justify-content: right;
-    padding-right: 52px;
+    padding-right: 20px;
+    margin-top: 12px;
 }
 
 .page-btn-li {
@@ -12,9 +13,6 @@
     list-style-type: none;
 }
 
-/* <li onClick={()=>setPageNumber(i)} className={` ${pageNumber === i ? 'bg-indigo-300 shadow-lg shadow-indigo-300/50 text-white' : 'bg-slate-600 hover:bg-indigo-400 shadow-lg hover:shadow-indigo-500/50 hover:text-white text-[#d0d2d6]'} w-[33px] h-[33px] rounded-full flex justify-center items-center cursor-pointer `}> */
-
-/* w-[33px] h-[33px] rounded-full flex justify-center items-center cursor-pointer  */
 .page-btn {
     display: flex;
     justify-content: center;
@@ -27,13 +25,11 @@
     color: white;
 }
 
-/* className={` ${pageNumber === i ? 'bg-indigo-300 shadow-lg shadow-indigo-300/50 text-white' */
 .page-btn-1 {
     background-color: blue;
     cursor: default;
 }
 
-/* 'bg-slate-600 hover:bg-indigo-400 shadow-lg hover:shadow-indigo-500/50 hover:text-white text-[#d0d2d6]' */
 .page-btn-2 {
     background-color: lightblue;
  }
@@ -62,13 +58,13 @@
 }
 
 .page-nav-btn:active {
-    background-color: #888;
+    background-color: black;
     box-shadow: 3px 3px #555;
     transform: translate(3px, 3px);
 }
 
 .inactive {
-    color: gray;
+    color: black;
     box-shadow: none;
     cursor: not-allowed;
     pointer-events: none;
@@ -120,4 +116,10 @@
     display: flex;
     justify-content: right;
     padding-right: 13px;  
+}
+
+.dissappear-Btn {
+    color: black;
+    cursor: not-allowed;
+    pointer-events: none;
 }

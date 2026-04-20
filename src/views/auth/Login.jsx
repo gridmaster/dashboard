@@ -43,7 +43,7 @@ const Login = () => {
                         <tbody>
                             
                             <tr >
-                                <th className='th-style'>Email</th>
+                                <th className='th-style th-login-pad'>Email</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>
@@ -52,7 +52,7 @@ const Login = () => {
                             </tr>
 
                             <tr >
-                                <th className='th-style'>Password</th>
+                                <th className='th-style th-login-pad'>Password</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>

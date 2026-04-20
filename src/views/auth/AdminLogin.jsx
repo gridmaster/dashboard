@@ -66,7 +66,7 @@ const AdminLogin = () => {
 
                         <tr>
                         <th>
-                            <p>The Boss!</p>
+                            <p className='p-user-title'>The Boss!</p>
                             <div className='admin-logo'>
                                 <div className='admin-pic'>
                                     <img className='img-shape' src="http://localhost:3000/images/angry ape.jpg" alt="The Boss!"/>
@@ -78,7 +78,7 @@ const AdminLogin = () => {
                         <tbody>
                             
                             <tr >
-                                <th className='th-style'>Email</th>
+                                <th className='th-style th-admin-email'>Email</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>
@@ -87,7 +87,7 @@ const AdminLogin = () => {
                             </tr>
 
                             <tr >
-                                <th className='th-style'>Password</th>
+                                <th className='th-style th-login-pad'>Password</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>
@@ -97,7 +97,7 @@ const AdminLogin = () => {
                         </tbody>
                         <tfoot>
                             <tr >
-                                <th>
+                                <th >
                                     <div className='register-button'>
 
                                         <button disabled={loader ? true : false}  className='tr-button-style admin-button'>

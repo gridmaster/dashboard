@@ -14,8 +14,6 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
         setAllNav(navs)
     },[])
 
-    // if(allNav.length > 0) console.log(allNav[0].path);
-
     return (
         <div>
             <div onClick={() => setShowSidebar(false)} className={`show-sidebar ${!showSidebar ? 'invisible' : 'visible'}`}>

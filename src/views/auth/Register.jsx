@@ -43,7 +43,7 @@ const Register = () => {
                         </thead>
                         <tbody>
                             <tr className='tr-td'>
-                                <th className='th-style'>Name</th>
+                                <th className='th-style th-login-pad '>Name</th>
                             </tr>
                             <tr className='tr-td'>
                                 <td >
@@ -52,7 +52,7 @@ const Register = () => {
                             </tr>
 
                             <tr >
-                                <th className='th-style'>Email</th>
+                                <th className='th-style th-login-pad'>Email</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>
@@ -61,7 +61,7 @@ const Register = () => {
                             </tr>
 
                             <tr >
-                                <th className='th-style'>Password</th>
+                                <th className='th-style th-login-pad'>Password</th>
                             </tr>
                             <tr >
                                 <th className='tr-td'>

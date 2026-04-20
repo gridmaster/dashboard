@@ -33,17 +33,22 @@ li.dash-back {
   margin-top: 12px;
 }
 
-li.dash-main {
+/* li.dash-main {
   background-color: #00f;
-}
+} */
 
 li.dash-sub {
   background-color: #e6e7fb;
 }
 
+li:active {
+  background-color: #555;
+  transform: scale(0.95);
+}
+
 li.dash-text-aliceblue {
   position: relative;
-  -webkit-text-fill-color: aliceblue;
+  /* -webkit-text-fill-color: aliceblue; */
 }
 
 .no-hover {
@@ -89,7 +94,7 @@ a:hover {
   padding-top: 5px;
 }
 
-.dash-icon { color: white; }
+.dash-icon { color: black; }
 
 .dash-select {
   display: flex;
