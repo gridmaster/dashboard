@@ -34,10 +34,10 @@ thead th {
 }
 
 .orders-detail-column {
-    height: 20px;
+    /* height: 20px; */
     width: 138px;
     text-align: center;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
     padding-block: 4px;
     font-size: 16px;
     border-bottom: 1px solid rgb(106, 163, 68);
@@ -75,6 +75,7 @@ thead th {
 }
 
 .orders-div-bottom {
+        width: 1048px;
     border-bottom: 2px solid rgb(106, 163, 68);
     margin-bottom: 8px;
 }

@@ -82,13 +82,13 @@ const Category = () => {
                 <div className="grid-container">
 
                     <div className="item1">
-                        <div className='orders-div-outer'>
-                            <select onChange={(e) => setParPage(parseInt(e.target.value))} className='orders-select'>
+                        <div className='category-div-outer'>
+                            <select onChange={(e) => setParPage(parseInt(e.target.value))} className='category-select'>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
                             </select>
-                            <input className='orders-search' type="text" placeholder='search' />
+                            <input className='category-search' type="text" placeholder='search' />
                         </div>
 
                     </div>

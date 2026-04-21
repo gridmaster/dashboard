@@ -67,13 +67,15 @@
 
 
 /* Orders.css */
-.orders-div-outer {
+.category-div-outer {
+    display: flex;
+    justify-content: space-between;
     height: 48px;
     border-radius: 5px;
     background-color: cornflowerblue;
 }
 
-.orders-select {
+.category-select {
     align-items: center;
     width: 60px;
     height: 28px;
@@ -87,7 +89,7 @@
     margin: 8px 0px 18px 8px;
 }
 
-.orders-search {
+.category-search {
     float: right;
     width: 168px;
     height: 22px;
@@ -100,7 +102,7 @@
     margin: 8px 8px 18px 0px;
 }
 
-.orders-select:hover {
+.category-select:hover {
     border-color:hsl(from rgb(179, 171, 184) h s 85%);
 }
 
