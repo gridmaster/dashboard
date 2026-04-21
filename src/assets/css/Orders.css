@@ -23,10 +23,15 @@ thead th {
     background-color: cornflowerblue;
 }
 
+.page-btn-ul {
+    padding-right: 18px;
+    margin-top: 14px;
+}
 
 .orders-div {
     display: flex;
     margin-right: 8px;
+    padding-left: 10px;
     justify-content: space-between;
     font-size: small;
     text-align: center;
@@ -34,10 +39,9 @@ thead th {
 }
 
 .orders-detail-column {
-    /* height: 20px; */
-    width: 138px;
+    width: 135px;
     text-align: center;
-    /* padding-inline: 20px; */
+    padding-inline: 20px;
     padding-block: 4px;
     font-size: 16px;
     border-bottom: 1px solid rgb(106, 163, 68);
@@ -78,6 +82,8 @@ thead th {
     width: 1048px;
     border-bottom: 2px solid rgb(106, 163, 68);
     margin-bottom: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
 }
 
 .orders-div-wrap {
@@ -91,7 +97,7 @@ thead th {
 .orders-div-container {
     padding: 8px 8px 8px 20px;
     background-color: cornflowerblue;
-    height: 401px;
+    height: auto;
     width: 1066px;
     margin-left: 21px;
     border-radius: 5px;
@@ -99,10 +105,12 @@ thead th {
 
 .orders-div-outer {
     /* border: 2px solid black; */
-    margin-top: 7px;
+    /* margin-top: 7px; */
+    width: 1064px;
+    margin-left: -10px;
     padding: 8px 8px 8px 1px;
     border-radius: 5px;
-    background-color: cornflowerblue;
+    background-color: blue;
 }
 
 .orders-div-content {
