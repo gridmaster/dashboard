@@ -63,11 +63,16 @@
     transform: translate(3px, 3px);
 }
 
-.inactive {
-    color: black;
+.btn-inactive {
+    color: lightslategray;
     box-shadow: none;
     cursor: not-allowed;
     pointer-events: none;
+}
+
+.btn-active {
+    /* color: yellow; */
+    box-shadow: none;
 }
 
 .page-btn-bg-color {

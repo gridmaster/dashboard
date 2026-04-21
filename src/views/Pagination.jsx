@@ -49,7 +49,7 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, parPage, showItem}) =
     return (
         <ul className='page-btn-ul'>
             {                                           
-                <li onClick={()=>setPageNumber(pageNumber - 1)} className={` ${pageNumber === 1 ? 'inactive' : '' } page-btn-2 page-btn`}>
+                <li onClick={()=>setPageNumber(pageNumber - 1)} className={` ${pageNumber === 1 ? 'btn-inactive' : '' } page-btn-2 page-btn`}>
                     <MdOutlineKeyboardDoubleArrowLeft />
                 </li>
             }
@@ -57,7 +57,7 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, parPage, showItem}) =
                 createBtn()
             }
             {
-                <li onClick={() => setPageNumber(pageNumber + 1)} className={` ${pageNumber === totalItem ? 'inactive' : '' } page-btn-2 page-btn`}>
+                <li onClick={() => setPageNumber(pageNumber + 1)} className={` ${pageNumber === totalItem ? 'btn-inactive' : 'btn-active' } page-btn-2 page-btn`}>
                     <MdOutlineKeyboardDoubleArrowRight  />
                 </li>
             }

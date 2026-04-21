@@ -6,3 +6,120 @@
     text-transform: uppercase;
     border: 2px solid slategray;
 }
+
+
+/* Admin.css */
+.dash-content-first {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 6px;
+}
+
+.div-chart-outer {
+    /* border: 2px solid black; */
+    width: 1077px%;
+    height: 50px;
+    margin-top: 7px;
+    padding: 8px 8px 8px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    width: 1077px;
+    min-width: 700px;
+    min-height: 300px;
+    border-radius: 5px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+/*  background-color: rgba(255, 255, 255, 0.8); */
+    display: block;
+    padding: 12px;
+    margin-right: 10px;
+
+    font-size: 30px;
+    max-height: 555px;
+}
+
+.item1 {
+    background-color: #6a5fdf;
+    border-radius: 5px;
+}
+
+.item2 {
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 5px;
+    background-color: #6a5fdf;
+    /* justify-content: space-between; */
+}
+
+.div-seller-msg {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;;
+}
+
+
+/* Orders.css */
+.orders-div-outer {
+    height: 48px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+
+.orders-select {
+    align-items: center;
+    width: 60px;
+    height: 28px;
+    margin-bottom: 1px;
+    background-color: #e7e7e7;
+    outline: none;
+    border-color: #555;
+    border-width: 1px;
+    border-radius: 3px;
+    color: #154095;
+    margin: 8px 0px 18px 8px;
+}
+
+.orders-search {
+    float: right;
+    width: 168px;
+    height: 22px;
+    border-radius: 3px;
+    border: 2px solid black;
+    font-weight: 575;
+    outline: none;
+    background-color: #e7e7e7;
+    color: #154095;
+    margin: 8px 8px 18px 0px;
+}
+
+.orders-select:hover {
+    border-color:hsl(from rgb(179, 171, 184) h s 85%);
+}
+
+.recient-sellers {
+    background-color: #6a5fdf;
+    font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.recient-format {
+    width: 160px;
+    min-width: 160px;
+    height: 20px;
+}
+
+.view-all-sellers {
+    font-size: 16px;
+    width: 64px;
+    min-width: 64px;
+    height: 20px;
+}
