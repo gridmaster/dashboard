@@ -48,7 +48,7 @@
     padding: 8px 8px 8px 20px;
 }
 
-.grid-container {
+.category-grid-container {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 10px;
@@ -60,7 +60,7 @@
     padding: 10px;
 }
 
-.grid-container > div {
+.category-grid-container > div {
     display: block;
     padding: 12px;
     margin-right: 10px;
