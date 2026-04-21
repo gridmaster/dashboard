@@ -1,3 +1,5 @@
+
+
 .bottom-table {
     width: 100%;
     font-size: small;
@@ -7,8 +9,30 @@
     border: 2px solid slategray;
 }
 
+/**************************/
+/* Admin.css & Orders.css */
+/**************************/
+.on-hover-row:hover {
+    background-color:hsl(from rgb(179, 171, 184) h s 85%);
+    width: 28px;
+    height: 24px;;
+    color: cornflowerblue;
+    border-radius: 2px;
+    cursor: pointer;
+}
 
+.hidden {
+    display: none;
+}
+
+.page-btn-ul {
+    padding-right: 6px;
+    margin-top: 14px;
+}
+
+/*************/
 /* Admin.css */
+/*************/
 .dash-content-first {
     display: flex;
     flex-wrap: wrap;
@@ -37,13 +61,22 @@
 }
 
 .grid-container > div {
-/*  background-color: rgba(255, 255, 255, 0.8); */
     display: block;
     padding: 12px;
     margin-right: 10px;
-
-    font-size: 30px;
+    font-size: 18px;
     max-height: 555px;
+}
+
+.category-order-detail {
+    display: block;
+    width: 610px;
+    padding-top: 4px;
+    padding-left: 4px;
+    background-color: #aaf;
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(106, 163, 68);
+    border-right: 3px solid rgb(106, 163, 68);
 }
 
 .item1 {
@@ -52,11 +85,8 @@
 }
 
 .item2 {
-    /* display: flex;
-    flex-direction: column; */
-    border-radius: 5px;
     background-color: #6a5fdf;
-    /* justify-content: space-between; */
+    border-radius: 5px;
 }
 
 .div-seller-msg {
@@ -66,7 +96,9 @@
 }
 
 
+/**************/
 /* Orders.css */
+/**************/
 .category-div-outer {
     display: flex;
     justify-content: space-between;
@@ -94,7 +126,7 @@
     width: 168px;
     height: 22px;
     border-radius: 3px;
-    border: 2px solid black;
+    border: 1px solid black;
     font-weight: 575;
     outline: none;
     background-color: #e7e7e7;
@@ -102,8 +134,44 @@
     margin: 8px 8px 18px 0px;
 }
 
+.category-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    text-align: center;
+    color: #d0d2d6;
+}
+
+.category-detail-column {
+    /* height: 20px; */
+    width: 104px;
+    text-align: center;
+    /* padding-inline: 20px; */
+    padding-block: 4px;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(106, 163, 68);
+    color: #e8e8e8;
+}
+
+.category-text-uppercase {
+    text-transform: uppercase;
+}
+
+.category-div-bottom {
+    width: 612px;
+    border-bottom: 2px solid rgb(106, 163, 68);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
 .category-select:hover {
     border-color:hsl(from rgb(179, 171, 184) h s 85%);
+}
+
+.category-div-detail {
+    display: flex;
+    border: 1px solid lightblue;
+    border-bottom: none;
 }
 
 .recient-sellers {
