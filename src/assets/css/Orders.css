@@ -89,13 +89,17 @@ thead th {
 
 .orders-div-container {
     padding: 8px 8px 8px 20px;
+    background-color: cornflowerblue;
+    height: 401px;
+    width: 1066px;
+    margin-left: 21px;
+    border-radius: 5px;
 }
 
 .orders-div-outer {
     /* border: 2px solid black; */
-    width: 1067px;
     margin-top: 7px;
-    padding: 8px 8px 8px 20px;
+    padding: 8px 8px 8px 1px;
     border-radius: 5px;
     background-color: cornflowerblue;
 }
@@ -143,14 +147,13 @@ thead th {
     align-items: center;
     width: 60px;
     height: 28px;
-    margin-bottom: 1px;
     background-color: #e7e7e7;
     outline: none;
     border-color: #555;
     border-width: 1px;
     border-radius: 3px;
     color: #154095;
-    margin: 8px 0px 18px 8px;
+    margin: 7px 0px 18px 8px;
 }
 
 .orders-select:hover {
