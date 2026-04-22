@@ -21,17 +21,6 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, parPage, showItem}) =
         startPage = totalPage - showItem
     }
 
-    // let startBtn = pageNumber
-    // let endBtn = startBtn-1 + parPage
-    // if( endBtn >= totalItem ) {
-    //     startBtn = endBtn - 4
-    //     endBtn = totalItem
-    // }
-
-    // if (startPage <= 0) {
-    //     startPage = 1
-    // }
-
     let startBtn = 1
     let endBtn = 5
 
@@ -50,8 +39,6 @@ const Pagination = ({pageNumber, setPageNumber, totalItem, parPage, showItem}) =
 
         const btns = []
         for (let i = startBtn; i <= endBtn; i++) {
-            console.log("i = " + i)
-
             btns.push(
                 <li key={i} onClick={()=>setPageNumber(i)} className={` ${pageNumber === i ? 'page-btn-1' : 'page-btn-2'} page-btn`}>
                     {i}                    

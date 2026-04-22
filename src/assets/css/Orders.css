@@ -1,12 +1,42 @@
 .orders-table-bottom {
     width: 100%;
-    font-size: small;
     text-align: center;
     color: #d0d2d6;
 }
 
+
+.bottom-table-wrap {
+    position: relative;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+.orders-bottom-table {
+    width: 1039px;
+    margin-left: 16px;
+    text-align: center;
+    color: #d0d2d6;
+    border: 2px solid slategray;
+    border-radius: 5px;
+}
+
 thead th {
     border-bottom: 3px solid rgb(247, 210, 142);
+}
+
+.orders-table-column {
+    height: 20px;
+    width: 16%;
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: 16px;
+}
+
+.orders-table-tr {
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: medium;
+    white-space: nowrap;
 }
 
 .on-hover-row:hover {
@@ -160,9 +190,9 @@ thead th {
     outline: none;
     border-color: #555;
     border-width: 1px;
-    border-radius: 3px;
+    border-radius: px;
     color: #154095;
-    margin: 7px 0px 18px 8px;
+    margin: 7px 0px 18px 16px;
 }
 
 .orders-select:hover {

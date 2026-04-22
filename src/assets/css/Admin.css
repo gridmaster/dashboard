@@ -59,6 +59,10 @@
   padding: 10px;
 }
 
+thead th {
+    border-bottom: 3px solid rgb(247, 210, 142);
+}
+
 .grid-container > div {
 /*  background-color: rgba(255, 255, 255, 0.8); */
     display: block;
@@ -78,10 +82,8 @@
 
 .bottom-table {
     width: 100%;
-    font-size: small;
     text-align: center;
     color: #d0d2d6;
-    text-transform: uppercase;
     border: 2px solid slategray;
 }
 

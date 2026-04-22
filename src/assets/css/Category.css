@@ -1,14 +1,5 @@
 
 
-.bottom-table {
-    width: 100%;
-    font-size: small;
-    text-align: center;
-    color: #d0d2d6;
-    text-transform: uppercase;
-    border: 2px solid slategray;
-}
-
 /**************************/
 /* Admin.css & Orders.css */
 /**************************/
@@ -28,6 +19,40 @@
 .page-btn-ul {
     padding-right: 6px;
     margin-top: 14px;
+}
+
+thead th {
+    border-bottom: 3px solid rgb(247, 210, 142);
+}
+
+.category-bottom-outer {
+    padding: 4px;
+    background-color: #6a5fdf;
+    border-radius: 5px;
+    margin-top: 6px;;
+}
+
+.category-table-column {
+    height: 20px;
+    width: 12px;
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: 16px;
+}
+
+.category-table-tr {
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: medium;
+    white-space: nowrap;
+}
+
+.bottom-table {    
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: #d0d2d6;
+    border: 2px solid slategray;
 }
 
 /*************/
@@ -143,10 +168,8 @@
 }
 
 .category-detail-column {
-    /* height: 20px; */
     width: 104px;
     text-align: center;
-    /* padding-inline: 20px; */
     padding-block: 4px;
     font-size: 16px;
     border-bottom: 1px solid rgb(106, 163, 68);
@@ -154,7 +177,7 @@
 }
 
 .category-text-uppercase {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .category-div-bottom {

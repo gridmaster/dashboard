@@ -92,79 +92,32 @@ const Category = () => {
                             <input className='category-search' type="text" placeholder='search' />
                         </div>
 
-                        <div className='category-div category-text-uppercase category-div-bottom'>
-                            <div className='category-detail-column'>Order Id</div>
-                            <div className='category-detail-column'>Price</div>
-                            <div className='category-detail-column'>Payment Status</div>
-                            <div className='category-detail-column'>Order Status</div>
-                            <div className='category-detail-column'>Action</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine /></div>
+                        <div className='category-bottom-outer'>
+                            <div className='bottom-table-wrap'>
+                                <table className='bottom-table'>
+                                    <thead className='bottom-table'>
+                                        <tr>
+                                            <th scope='row' className='bottom-table-column'>Order Id</th>
+                                            <th scope='row' className='bottom-table-column'>Price</th>
+                                            <th scope='row' className='bottom-table-column'>Payment Status</th>
+                                            <th scope='row' className='bottom-table-column'>Active</th>                               
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {                                
+                                            [1,2,3,4,5].map((d, i) => <tr key={i}>
+                                            <td className='bottom-table-tr'>#34344</td>
+                                            <td className='bottom-table-tr'>$454</td>
+                                            <td className='bottom-table-tr'>Pending</td>
+                                            <td className='bottom-table-tr'>View</td>
+                                        </tr>)
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#34534</div>
-                            <div className='category-detail-column'>$345</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-                        
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#2343</div>
-                            <div className='category-detail-column'>$45</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div onClick={(e) => setShow(!show)} className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-
-                        <div className={ show ? 'category-order-detail' : 'hidden' }>
+            
+                        {/*<div className={ show ? 'category-order-detail' : 'hidden' }>
                             <div className='category-div-detail'>
                                 <div className='category-detail-column text-color'>#9032</div>
                                 <div className='category-detail-column text-color'>$22</div>
@@ -178,43 +131,18 @@ const Category = () => {
                                 <div className='category-detail-column text-color'>Received</div>
                                 <div className='category-detail-column text-color'>Pending</div>
                             </div>
-                        </div>
-
-                        <div className='category-div'>
-                            <div className='category-detail-column'>#9032</div>
-                            <div className='category-detail-column'>$22</div>
-                            <div className='category-detail-column'>Received</div>
-                            <div className='category-detail-column'>Pending</div>
-                            <div className='category-detail-column'>Y</div>
-                            <div onClick={(e) => setShow(!show)} className='category-detail-column'><FaArrowsDownToLine className='on-hover-row' /></div>
-                        </div>
-                
-                        <div className={ show ? 'category-order-detail' : 'hidden' }>
-                            <div className='category-div-detail'>
-                                <div className='category-detail-column text-color'>#9032</div>
-                                <div className='category-detail-column text-color'>$22</div>
-                                <div className='category-detail-column text-color'>Received</div>
-                                <div className='category-detail-column text-color'>Pending</div>
-                            </div>
-
-                            <div className='category-div-detail'>
-                                <div className='category-detail-column text-color'>#9032</div>
-                                <div className='category-detail-column text-color'>$22</div>
-                                <div className='category-detail-column text-color'>Received</div>
-                                <div className='category-detail-column text-color'>Pending</div>
-                            </div>
-                        </div>
+                        </div> */}
 
                         <Pagination 
                             pageNumber = {currentPage}
                             setPageNumber = {setCurrentPage}
-                            totalItem = {12}
+                            totalItem = {27}
                             parPage = {parPage}
-                            showItem = {12}
+                            showItem = {27}
                         />
 
                     </div>
-                    
+
                     <div className="item2">
                         <div className='div-seller-msg'>
                             <span className="recient-sellers recient-format">Recient Seller Message</span>

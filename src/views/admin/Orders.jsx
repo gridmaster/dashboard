@@ -24,7 +24,36 @@ const Orders = () => {
                     </select>
                     <input className='orders-search' type="text" placeholder='search' />
 
-                    <div className='orders-div orders-text-uppercase orders-div-bottom'>
+                    <table className='orders-bottom-table'>
+                        <thead className='orders-bottom-table'>
+                            <tr>
+                                <th scope='row' className='orders-table-column'>Order Id</th>
+                                <th scope='row' className='orders-table-column'>Price</th>
+                                <th scope='row' className='orders-table-column'>Payment Status</th>
+                                <th scope='row' className='orders-table-column'>Active</th>              
+                                <th scope='row' className='orders-table-column'>Action</th>
+                                <th scope='row' className='orders-table-column'><FaArrowsDownToLine /></th>                                                                 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {                                
+                                [1,2,3,4,5].map((d, i) => <tr key={i}>
+                                <td className='orders-table-tr'>#34344</td>
+                                <td className='orders-table-tr'>$454</td>
+                                <td className='orders-table-tr'>Pending</td>
+                                <td className='orders-table-tr'>View</td>
+                                <td className='orders-table-tr'>Arf!</td>
+                                <td className='orders-table-tr'><FaArrowsDownToLine /></td>                                            
+                            </tr>)
+                            }
+                        </tbody>
+                    </table>
+                        {/* </div> */}
+                    {/* </div> */}
+
+
+
+                    {/* <div className='orders-div orders-text-uppercase orders-div-bottom'>
                         <div className='orders-detail-column'>Order Id</div>
                         <div className='orders-detail-column'>Price</div>
                         <div className='orders-detail-column'>Payment Status</div>
@@ -135,14 +164,14 @@ const Orders = () => {
                             <div className='orders-detail-column text-color'>Received</div>
                             <div className='orders-detail-column text-color'>Pending</div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <Pagination 
                         pageNumber = {currentPage}
                         setPageNumber = {setCurrentPage}
-                        totalItem = {12}
+                        totalItem = {27}
                         parPage = {parPage}
-                        showItem = {12}
+                        showItem = {27}
                     />
                 </div> 
             </div>
