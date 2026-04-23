@@ -36,8 +36,8 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
                                             <Link to={n.path}
                                                     className={`${allNav[i]?.title === 'Dashboard' ? 'dash-link dash-icon' : 'dash-select select-icon'}`}>
 
-                                                <span className='icon-span'>{n.icon}</span>
-                                                <span className='hover-mouse'>{n.title}</span>
+                                                <span className='icon-span sidebar-span'>{n.icon}</span>
+                                                <span className='hover-mouse sidebar-span'>{n.title}</span>
                                             </Link>
                                         </li>
                                     )

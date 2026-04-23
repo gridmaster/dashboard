@@ -32,6 +32,12 @@ thead th {
     margin-top: 6px;;
 }
 
+.category-table-wrap {
+    position: relative;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
 .category-table-column {
     height: 20px;
     width: 12px;
@@ -41,13 +47,15 @@ thead th {
 }
 
 .category-table-tr {
+    width: 25%;
+    justify-items: center;
     padding-inline: 3px;
     padding-block: 4px;
     font-size: medium;
     white-space: nowrap;
 }
 
-.bottom-table {    
+.category-bottom-table {    
     width: 100%;
     border-radius: 5px;
     text-align: center;
@@ -55,9 +63,33 @@ thead th {
     border: 2px solid slategray;
 }
 
+.category-cell {
+    padding-right: 6px;
+    margin-left: 6px;
+}
+
+.category-edit-icon {
+    padding-right: 3px;
+    padding-left: 6px;
+}
+
 /*************/
 /* Admin.css */
 /*************/
+.category-msg-icon {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-left: 6px;
+}
+
 .dash-content-first {
     display: flex;
     flex-wrap: wrap;
@@ -176,9 +208,9 @@ thead th {
     color: #e8e8e8;
 }
 
-.category-text-uppercase {
-    /* text-transform: uppercase; */
-}
+{/* .category-text-uppercase {
+     text-transform: uppercase; 
+ */}
 
 .category-div-bottom {
     width: 612px;
@@ -197,17 +229,30 @@ thead th {
     border-bottom: none;
 }
 
+.white-text {
+    color: white;
+}
+
+.off-white-text {
+    color: #d0d2d6;
+}
+
 .recient-sellers {
     background-color: #6a5fdf;
     font-size: medium;
     margin-top: 0px;
     margin-bottom: 0px;
+        cursor: default;
 }
 
 .recient-format {
     width: 160px;
     min-width: 160px;
     height: 20px;
+}
+
+#name {
+    margin-left: 6px;
 }
 
 .view-all-sellers {

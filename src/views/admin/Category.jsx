@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowsDownToLine } from "react-icons/fa6";
+import { FaArrowsDownToLine, FaTrash } from "react-icons/fa6";
+import { FaEdit } from 'react-icons/fa'
 import Pagination from '../Pagination';
 
 import '../../assets/css/Category.css'
@@ -93,23 +94,25 @@ const Category = () => {
                         </div>
 
                         <div className='category-bottom-outer'>
-                            <div className='bottom-table-wrap'>
-                                <table className='bottom-table'>
-                                    <thead className='bottom-table'>
+                            <div className='category-table-wrap'>
+                                <table className='category-bottom-table'>
+                                    <thead className='category-bottom-table'>
                                         <tr>
-                                            <th scope='row' className='bottom-table-column'>Order Id</th>
-                                            <th scope='row' className='bottom-table-column'>Price</th>
-                                            <th scope='row' className='bottom-table-column'>Payment Status</th>
-                                            <th scope='row' className='bottom-table-column'>Active</th>                               
+                                            <th scope='row' className='category-table-column'>No</th>
+                                            <th scope='row' className='category-table-column'>Image</th>
+                                            <th scope='row' className='category-table-column'>Name</th>
+                                            <th scope='row' className='category-table-column'>Action</th>                               
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {                                
                                             [1,2,3,4,5].map((d, i) => <tr key={i}>
-                                            <td className='bottom-table-tr'>#34344</td>
-                                            <td className='bottom-table-tr'>$454</td>
-                                            <td className='bottom-table-tr'>Pending</td>
-                                            <td className='bottom-table-tr'>View</td>
+                                            <td className='category-table-tr'>{d}</td>
+                                            <td className='category-table-tr'>
+                                                <img className='category-msg-icon' src={`http://localhost:3000/images/category/${d}.jpg`} alt="BFD as Ralph would say..."/>
+                                            </td>
+                                            <td className='category-table-tr'>Sports</td>
+                                            <td className='category-table-tr category-cell'><FaEdit className='category-edit-icon'/><FaTrash className='category-edit-icon'/></td>
                                         </tr>)
                                         }
                                     </tbody>
@@ -145,8 +148,12 @@ const Category = () => {
 
                     <div className="item2">
                         <div className='div-seller-msg'>
-                            <span className="recient-sellers recient-format">Recient Seller Message</span>
-                            <Link className="view-all-sellers">'View All'</Link>
+                            <span className="recient-sellers recient-format off-white-text">Recient Seller Message</span>
+                            <Link className="view-all-sellers off-white-text">View All</Link>
+                        </div>
+                        <div className='off-white-text'>
+                            <label htmlFor='name'>Category Name </label>
+                            <input type='text' id='name' name='category_name' placeholder='Category Name' />
                         </div>
                     </div>
                 

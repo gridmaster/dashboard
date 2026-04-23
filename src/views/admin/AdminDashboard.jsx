@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../assets/css/Admin.css';
-import '../../assets/css/Home.css';
 import { RiCurrencyLine } from "react-icons/ri";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import { GiTakeMyMoney } from "react-icons/gi";
 import Chart from 'react-apexcharts';
 import { Link } from 'react-router-dom';
+import '../../assets/css/Admin.css';
+import '../../assets/css/Home.css';
 
 const AdminDashboard = () => {
 
