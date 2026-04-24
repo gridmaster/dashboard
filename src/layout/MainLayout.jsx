@@ -19,7 +19,7 @@ const MainLayout = () => {
                         <Sidebar  />
                     </div>  
                     
-                    <div id="content">
+                    <div id="content" className='category-content-page'>
                         <Header showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
                             <Outlet />
                     </div>

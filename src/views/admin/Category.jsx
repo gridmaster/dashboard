@@ -5,6 +5,7 @@ import { FaEdit } from 'react-icons/fa'
 import Pagination from '../Pagination';
 
 import '../../assets/css/Category.css'
+// import Category from './Category';
 
 const Category = () => {
 
@@ -112,7 +113,8 @@ const Category = () => {
                                                 <img className='category-msg-icon' src={`http://localhost:3000/images/category/${d}.jpg`} alt="BFD as Ralph would say..."/>
                                             </td>
                                             <td className='category-table-tr'>Sports</td>
-                                            <td className='category-table-tr category-cell'><FaEdit className='category-edit-icon'/><FaTrash className='category-edit-icon'/></td>
+                                            <td className='category-table-tr category-cell'><FaEdit className='category-edit-icon category-color-yellow '/><FaTrash className='category-edit-icon category-color-red'/>
+                                            </td>
                                         </tr>)
                                         }
                                     </tbody>
@@ -147,14 +149,25 @@ const Category = () => {
                     </div>
 
                     <div className="item2">
-                        <div className='div-seller-msg'>
-                            <span className="recient-sellers recient-format off-white-text">Recient Seller Message</span>
-                            <Link className="view-all-sellers off-white-text">View All</Link>
+                        <div>
+                            <h1 className="category-add-title off-white-text">Add Category</h1>
                         </div>
-                        <div className='off-white-text'>
-                            <label htmlFor='name'>Category Name </label>
-                            <input type='text' id='name' name='category_name' placeholder='Category Name' />
-                        </div>
+                        <form>
+                            <div className='off-white-text'>
+                                <label htmlFor='name' className='off-white-text'>Category Name </label>
+                                <input type='text' id='name' name='category_name' placeholder='Category Name' />
+                            </div>
+
+                            <div className='category-form-div'>
+                                <label className='category-form-box off-white-text'>
+                                    <img className='category-img-lg' src='' alt='Select Image' />
+                                </label>
+                            </div>
+                            <div className='category-button-div'>
+                                <button className='category-button-add off-white-text'>Add Category</button>
+                            </div>
+
+                        </form>
                     </div>
                 
                 </div>

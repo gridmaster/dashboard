@@ -3,6 +3,15 @@
 /**************************/
 /* Admin.css & Orders.css */
 /**************************/
+
+.category-content-page {
+    width: 100%;
+    padding-right: 16px;
+    max-height: 700px;
+    float: right;
+    background: lightblue;
+}
+
 .on-hover-row:hover {
     background-color:hsl(from rgb(179, 171, 184) h s 85%);
     width: 28px;
@@ -32,10 +41,48 @@ thead th {
     margin-top: 6px;;
 }
 
+.category-form-box {
+    display: flex;
+    height: 338px;
+    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: dashed;
+}
+
+.category-img-lg {
+    display: flex;
+        justify-content: center;
+    align-items: center;
+}
+
+.category-button-div {
+    height: 64px;
+    width: auto;
+    justify-items: center;
+}
+
+.category-button-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 28px;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.category-form-div {
+    height: 100%;
+}
+
 .category-table-wrap {
     position: relative;
     overflow-x: auto;
     border-radius: 5px;
+
 }
 
 .category-table-column {
@@ -71,6 +118,23 @@ thead th {
 .category-edit-icon {
     padding-right: 3px;
     padding-left: 6px;
+}
+
+.category-edit-icon:hover {
+    cursor: pointer;
+}
+
+.category-color-red {
+    color: red;
+}
+
+.category-color-yellow {
+    color: yellow;
+}
+
+.category-center-div {
+    width: 250px;
+    text-align: center;
 }
 
 /*************/
@@ -122,7 +186,7 @@ thead th {
     padding: 12px;
     margin-right: 10px;
     font-size: 18px;
-    max-height: 555px;
+    max-height: 533px;
 }
 
 .category-order-detail {
@@ -251,8 +315,21 @@ thead th {
     height: 20px;
 }
 
+.category-add-title {
+    Width: 396px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+
 #name {
-    margin-left: 6px;
+width: 100%;
+    margin-top: 8px;
+    margin-left: -4px;
+    /* font-size: 16px; */
+    height: 20px;
+    border-radius: 5px;
 }
 
 .view-all-sellers {
