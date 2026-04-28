@@ -3,7 +3,7 @@
 #outer {display: flex; width: 100vw; height:100vh}
 #inner {overflow:hidden;}
 #header {min-height:40px; background:#bbb}
-#content {min-width: 100vw; min-height:100vh; float:right; background:lightblue}
+#content {min-width: 1133px; min-height:100vh; float:right; background:lightblue}
 #sidebar {color:#ddd}
 
 .show-sidebar {

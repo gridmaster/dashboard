@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaArrowsDownToLine } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
 import Pagination from '../Pagination';
 
 import '../../assets/css/Orders.css'

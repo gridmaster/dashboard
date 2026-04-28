@@ -1,0 +1,106 @@
+
+.addxCat-main {
+    display: flex;
+}
+
+.catAdd-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catAdd-inner-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 65px;
+    min-width: 400px;
+    background-color: #6a5fdf;
+    margin: 12px 0px 0px 26px;
+    max-width: 608px;
+}
+
+.catAdd-button-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 28px;
+    margin-top: 4px;
+    margin-left: 16px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.catAdd-head-position {
+    display: inline-flex;
+    background-color: burlywood;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 82%;
+}
+
+.catAdd-text-style {
+    margin-top: 2px;
+    margin-right: 8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.catAdd-btn-style {
+    margin-left: 8px;
+}
+
+.catAdd-header-input {
+  height: 80%;
+}
+
+.right-anchored {
+  position: absolute;
+  right: -8px;
+}
+
+.left-anchored {
+  position: absolute;
+  left: 208px;
+}
+
+.left-sb-anchored {
+  position: absolute;
+  left: 5px;
+  margin-top: 6px;
+}
+
+.catAdd-right-anchored {
+  position: absolute;
+  right: -8px;
+}
+
+.catAdd-left-anchored {
+  position: absolute;
+  left: 208px;
+}
+
+.catAdd-left-free {
+  left: 208px;
+}
+
+.catAdd-left-sb-anchored {
+  position: absolute;
+  left: 5px;
+  margin-top: 12px;
+}
+
+.catAdd-chart-outer {
+    height: 50px;
+    padding: 0px 8px 8px 8px;
+}
+
+.catAdd-content-first {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 2px;
+}

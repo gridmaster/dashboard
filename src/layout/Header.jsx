@@ -14,7 +14,7 @@ const Header = ({showSidebar, setShowSidebar}) => {
         
         <div className='header'>
 
-            <div className={`${showSidebar === true ? 'div-inner-header left-anchored right-anchored' : 'div-inner-header left-sb-anchored right-anchored '}`}>
+            <div className={`${showSidebar === true ? 'div-inner-header left-anchored right-anchored' : 'div-inner-header left-sb-anchored right-anchored'}`}>
 
                 <button onClick={() => setShowSidebar(!showSidebar)} className="btn">
                     <FaList className='show-list-icon'/>

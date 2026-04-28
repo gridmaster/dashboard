@@ -1,88 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaArrowsDownToLine, FaTrash } from "react-icons/fa6";
+import { FaTrash } from "react-icons/fa6";
 import { FaEdit } from 'react-icons/fa'
 import Pagination from '../Pagination';
 
 import '../../assets/css/Category.css'
-// import Category from './Category';
+import AddCategory from '../../layout/AddCategory';
 
 const Category = () => {
 
     const [parPage, setParPage] = useState(5)
     const [currentPage, setCurrentPage] = useState(1)
     const [searchValue, setSearchValue] = useState('')
-    const [show, setShow] = useState(false)
-
-    const state = {
-
-        series: [
-            {
-                name: 'Orders',
-                data : [23,34,45,45,65,43,44,43,32,20,23,34]
-            },
-            {
-                name: 'Revenue',
-                data : [13,32,45,37,54,43,34,33,32,29,43,44]
-            },
-            {
-                name: 'Sellers',
-                data : [55,53,57,78,86,67,58,59,76,77,54,43]
-            }
-        ],
-        options : {
-            color : ['#181eee8', '#181eee8'],
-            plotOptions : {
-                radius : 30
-            },
-            chart : {
-                background : 'transparent',
-                foreColor : '#d0d2d6'
-            },
-            dataLabels : {
-                enabled : false
-            },
-            strock : {
-                show : true,
-                curve : ['smooth', 'straight', 'stepline'],
-                lineCap : 'butt',
-                colors : '#f0f0f0',
-                width : .5,
-                dashArray : 0
-            },
-            xaxis : {
-                categories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            },
-            legend : {
-                position : 'top'
-            },
-            responsive : [
-                {
-                breakpoint : 565,
-                yaxis : {
-                    cateories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                },
-                options : {
-                    plotOptions : {
-                        bar : {
-                            horizontal : true
-                        }
-                    },
-                    chart : {
-                        height : "550px"
-                    }
-                }
-            }
-            ]
-            
-        }
-
-    }
+    const [showSidebar, setShowSidebar] = useState(true);
+    console.log("showSidebar = " + showSidebar)
 
     return (
         <div className='dash-content-first'>
+
+        {/* className={width <= 768 ? "addCat-main" : "addCat-hide"} */}
+        <AddCategory showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
             <div className='div-chart-outer'>
-                <div className="category-grid-container">
+                <div id='category-margin' className="category-grid-container">
 
                     <div className="item1">
                         <div className='category-div-outer'>
