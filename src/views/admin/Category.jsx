@@ -14,7 +14,7 @@ const Category = () => {
     console.log("showSidebar = " + showSidebar)
 
     return (
-        <div className='dash-content-first'>
+        <div className='category-content-first'>
 
         {/* className={width <= 768 ? "addCat-main" : "addCat-hide"}
         <AddCategory showSidebar={showSidebar} setShowSidebar={setShowSidebar} /> */}
