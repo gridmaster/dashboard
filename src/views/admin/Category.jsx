@@ -4,7 +4,6 @@ import { FaEdit } from 'react-icons/fa'
 import Pagination from '../Pagination';
 
 import '../../assets/css/Category.css'
-import AddCategory from '../../layout/AddCategory';
 
 const Category = () => {
 
@@ -17,10 +16,18 @@ const Category = () => {
     return (
         <div className='dash-content-first'>
 
-        {/* className={width <= 768 ? "addCat-main" : "addCat-hide"} */}
-        <AddCategory showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-            <div className='div-chart-outer'>
-                <div id='category-margin' className="category-grid-container">
+        {/* className={width <= 768 ? "addCat-main" : "addCat-hide"}
+        <AddCategory showSidebar={showSidebar} setShowSidebar={setShowSidebar} /> */}
+
+            <div className='category-add-popup mobile-only' >
+                <span className='category-text-style off-white-text'>Category Add</span>
+                <span >
+                    <button className='category-btn-popup off-white-text'>Add</button>
+                </span>
+            </div>
+
+            <div className='category-chart-outer'>
+                <div className="category-grid-container">
 
                     <div className="item1">
                         <div className='category-div-outer'>
