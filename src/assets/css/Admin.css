@@ -1,8 +1,11 @@
 .dash-content-first {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 80px;
-    padding-left: 6px;
+    padding-top: 70px;
+}
+
+.off-white-text {
+    color: #d0d2d6;
 }
 
 .no-hover {
@@ -26,7 +29,7 @@
     width: 1077px%;
     height: 50px;
     margin-top: 7px;
-    padding: 8px 8px 8px 20px;
+    padding: 0px 8px 8px 8px;
 }
 
 .div-container {
@@ -52,7 +55,7 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-gap: 10px;
-  width: 1077px;
+  width: 1038px;
   min-width: 700px;
   border-radius: 5px;
   background-color: #2196F3;
@@ -67,10 +70,10 @@ thead th {
 /*  background-color: rgba(255, 255, 255, 0.8); */
     display: block;
     text-align: center;
-    padding: 12px;
+    /* padding: 12px; */
     font-size: 30px;
     padding-top: 18px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     max-height: 555px;
 }
 
@@ -103,7 +106,7 @@ thead th {
 }
 
 .dash-bottom-outer {
-    width: 1090px;
+    /* width: 1090px; */
     padding: 4px;
     background-color: #6a5fdf;
     border-radius: 5px;
@@ -141,6 +144,7 @@ thead th {
 
 .item2 {
     display: flex;
+    width: 406px;
     flex-direction: column;
     border-radius: 5px;
     background-color: #6a5fdf;
@@ -156,21 +160,22 @@ thead th {
 .recient-sellers {
     background-color: #6a5fdf;
     font-size: medium;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-left: 4px;
+    font-size: 18px;
 }
 
 .recient-format {
-    width: 160px;
-    min-width: 160px;
+    width: 182px;
+    min-width: 182px;
     height: 20px;
 }
 
 .view-all-sellers {
-    font-size: 16px;
-    width: 64px;
+    font-size: 19px;
+    width: 76px;
     min-width: 64px;
     height: 20px;
+    margin-right: 8px;
 }
 
 .admin-link {
@@ -189,6 +194,7 @@ thead th {
 
 .chart-position {
     margin-top: 2px;
+    min-height: 553px ! important;
 }
 
 .admin-message {
@@ -250,10 +256,10 @@ thead th {
 
 .sum-cards {
     display: flex;
-    width: 265px;
+    width: 264px;
     min-width: 0;
     overflow: hidden;;
-    margin-left: 20px;
+    margin-left: 9px;
 }
 
 .dash-cards {
@@ -302,10 +308,11 @@ thead th {
 .card-seller-message {
     display: block;
     height: 70px;
-    min-width: 385px;
+    width: 350px;
+    min-width: 375px;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px 0px 6px 9px;
     padding: 5px;
     align-content: center;
 }
@@ -346,7 +353,7 @@ thead th {
     border: 1px solid black;
     margin-top: 4px;
     margin-right: 12px;
-    margin-left: 6px;
+    margin-left: 1px;
 }
 
 .img-icon {
@@ -377,8 +384,6 @@ thead th {
   width: 120px;
   height: 120px; 
 }
-
-
 
 .admin-button {
     margin-bottom: 15px;

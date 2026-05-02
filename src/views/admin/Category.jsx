@@ -99,7 +99,7 @@ const Category = () => {
                         </div>
                         <form>
                             <div className='off-white-text'>
-                                <label htmlFor='name' className='off-white-text'>Category Name </label>
+                                <label htmlFor='name' className='category-name-label off-white-text'>Category Name </label>
                                 <input type='text' id='name' name='category_name' placeholder='Category Name' />
                             </div>
 

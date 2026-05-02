@@ -16,9 +16,9 @@
     width: 400px;
     justify-content: center;
     align-items: center;
-    margin-top: 14px;
-    margin-bottom: -8px;
-    margin-left: 20px;
+    margin-top: 16px;
+    margin-bottom: -9px;
+    margin-left: 2px;
     border-radius: 5px;
     background-color: #6a5fdf;
 }
@@ -92,7 +92,9 @@ thead th {
 .category-form-box {
     display: flex;
     height: 338px;
+    width: 382px;
     margin-top: 12px;
+    margin-left: 3px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -210,19 +212,19 @@ thead th {
 }
 
 .category-chart-outer {
-    display: flex;
+display: flex;
     /* border: 2px solid black; */
-    width: 1095px;
+    width: 1060px;
     height: 0px;
-    margin-top: 7px;
-    padding: 8px 8px 8px 20px;
+    margin-top: 8px;
+    padding: 8px 8px 8px 2px;
 }
 
 .category-grid-container {
     display: grid;
     grid-template-columns: 60% 40%;
-    /* grid-gap: 10px; */
-    width: 1077px;
+    grid-gap: 8px;
+    width: 1040px;
     height: 560px;
     min-width: 700px;
     min-height: 300px;
@@ -232,10 +234,15 @@ thead th {
     padding: 10px;
 }
 
+.category-name-label {
+    margin-left: 6px;
+    font-size: 20px;
+}
+
 .category-grid-container > div {
     display: block;
-    padding: 12px;
-    margin-right: 10px;
+    padding: 12px 0px 12px 0px;
+    margin-right: 4px;
     font-size: 18px;
     max-height: 533px;
 }
@@ -275,6 +282,8 @@ thead th {
     display: flex;
     justify-content: space-between;
     height: 48px;
+    margin-right: 8px;
+    margin-left: 8px;
     border-radius: 5px;
     background-color: cornflowerblue;
 }
@@ -375,11 +384,11 @@ thead th {
 }
 
 #name {
-    width: 100%;
+    width: 95%;
     margin-top: 8px;
-    margin-left: -4px;
-    /* font-size: 16px; */
-    height: 20px;
+    margin-left: 6px;
+    height: 24px;
+    font-size: 15px;
     border-radius: 5px;
 }
 

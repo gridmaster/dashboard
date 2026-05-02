@@ -25,6 +25,8 @@
 
 .parent_div_1, .parent_div_2, .parent_div_3 {
     display: flex;
+    width: 99%;
+    margin-right: 16px;
     /* IF YOU WANT PARENT DIVS NEXT TO EACH OTHER */
     /*float: left;*/
 }

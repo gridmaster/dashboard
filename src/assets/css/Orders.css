@@ -12,7 +12,7 @@
 }
 
 .orders-bottom-table {
-    width: 1039px;
+    width: 1010px;
     margin-left: 16px;
     text-align: center;
     color: #d0d2d6;
@@ -128,15 +128,15 @@ thead th {
     padding: 8px 8px 8px 20px;
     background-color: cornflowerblue;
     height: auto;
-    width: 1066px;
-    margin-left: 21px;
+    width: 1032px;
+    margin-left: 8px;
     border-radius: 5px;
 }
 
 .orders-div-outer {
     /* border: 2px solid black; */
     /* margin-top: 7px; */
-    width: 1064px;
+    /* width: 1064px; */
     margin-left: -10px;
     padding: 8px 8px 8px 1px;
     border-radius: 5px;
@@ -147,7 +147,7 @@ thead th {
     display: flex;
     flex-wrap: wrap;
     padding-top: 80px;
-    padding-left: 6px;
+    /* padding-left: 6px; */
 }
 
 /* .orders-div-outer {

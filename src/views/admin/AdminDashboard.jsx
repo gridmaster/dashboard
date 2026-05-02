@@ -75,7 +75,6 @@ const AdminDashboard = () => {
     }
 
 
-
     return (
         <div className='dash-content-first'>
 
@@ -143,8 +142,8 @@ const AdminDashboard = () => {
                     </div>
                     <div className="item2">
                         <div className='div-seller-msg'>
-                            <span className="recient-sellers recient-format">Recient Seller Message</span>
-                            <Link className="view-all-sellers">'View All'</Link>
+                            <span className="recient-sellers recient-format off-white-text">Recient Seller Message</span>
+                            <Link className="view-all-sellers off-white-text ">View All</Link>
                         </div>
                         <div className='card-seller-message'>
                             <img className='seller-msg-icon' src="http://localhost:3000/images/BB.jpeg" alt='googlie mooglie!'></img>
