@@ -1,217 +1,43 @@
-.header {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
+
+@media screen and (min-width: 1024px) {
+  .lg-header-screen {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .lg-header-bar {
+    margin-left: 260px !important;
+  }
+
+  .lg-header-sidebar {
+    display: hidden;
+  }
 }
 
-.header-content {
+.header-border-div {         
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 95.5%;
+    padding-top: 20px;
+    /* padding: 20px 8px 20px 8px; */
+    /* z-index: 40; */
+}
+
+.header-div {
+  margin-left: 0px;
+  border-radius: 6px;
+  height: 65px;
   display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: -6px;
-  border-radius: 8px;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #b1addf;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all;
 }
 
-.header-user-ids {
+.header-showSidebar {
+  width: 35px;
   display: flex;
-  flex-direction: column;
-  height: 38px;
-  margin: auto;
-  padding-right: 8px;
-}
-
-.header-input {
-  align-items: left;
-  border-left:1px solid;
-  height: 80%;
-}
-
-.header-image {
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  margin-right: 10px;
-  margin-top: 4px;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.a-tag-still {
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  margin-right: 10px;
-  margin-top: 4px;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.image-button {
-  background-image: url('http://localhost:3000/images/admin image 1.jpg');
-  background-size: cover; /* Resizes image to cover the button */
-  background-repeat: no-repeat;
-  width: 60px;  /* Set size to match your image */
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  margin-right: 12px;
-}
-
-.header-user {
-  text-align: right;
-  height: 20px;
-}
-
-.admin-header {
-  width: 100vw;
-}
-
-.right-anchored {
-  position: absolute;
-  right: -8px;
-}
-
-.left-anchored {
-  position: absolute;
-  left: 208px;
-}
-
-.left-free {
-  left: 208px;
-}
-
-.left-sb-anchored {
-  position: absolute;
-  left: 5px;
-  margin-top: 12px;
-}
-
-.hidden-right-anchored {
-  position: absolute;
-  right: -8px;
-}
-
-.hidden-left-anchored {
-  position: absolute;
-  left: 208px;
-}
-
-.div-user-info {
-  display: flex;
-  width: 200px;
-  height: 20px;
-  justify-content: right;
-}
-
-.h5-user-info {
-  display: flex;
-  width: 100%;
-  height: 20px;
-  justify-content: right;
-}
-
-.span-user-infoo {
-  display: flex;
-  width: 100%;
-  height: 20px;
-  justify-content: right;
-}
-
-.span-hide-text {
-  display: none;
-}
-
-.span-show-text {
-  display: block;
-  width: 48px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.show-text {
-  content: " Hide sidebar";
-} 
-
-.hide-text {
-  content: " Show sidebar";
-}
-
-.header-text {
-  margin: 17px 2px 3px 12px;
-  color: #423d72;
-  border-width: 1px;
-  border-color: black;
-  border-radius: 3px;
-  background-color: #e7e7e7;
-}
-
-.user-info {
-  display: flex; 
-  justify-items: center;
-  text-align: right;
-}
-
-.btn {
-  height: 28px;
-  width: 28px;
-  margin: 5px;
-  background-color: #e6e7fb;
-  color: #423d72;
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #00f;
-  color: white;
-}
-
-.responsive-div {
-   width: 80vw; 
-   margin: 1% auto;
-}
-
-.show-list-icon {
-  margin-top: 4px;
-  margin-left: -2px;
-}
-
-.div-inner-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 5px;
-    height: 65px;
-    min-width: 400px;
-    background-color: #b1addf;
-    margin: 8px;
-    max-width: 1060px;
-}
-
-.main-header-span {
-    width: 200px;
-    height: 50px;
-    margin-left: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.xxxxheader {
-  float: left;
-  background: #efefef;
-  background-repeat: no-repeat;
-  width: 240px;
-  height: 100px;
-}
-
-.xxxheader-right {
-  overflow: hidden; 
-  background-color: #000;
-  height: 100px;
 }

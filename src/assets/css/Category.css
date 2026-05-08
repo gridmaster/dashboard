@@ -1,56 +1,20 @@
 
-/* Visible by default (mobile/small screens) */
-.mobile-only {
-  display: none;
-}
-
-/* Hide when screen width is 1024px or larger */
-@media screen and (max-width: 899px) {
-  .mobile-only {
-    display: flex;
-  }
-}
-
-.category-add-popup {
-    height: 60px;
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    margin-bottom: -9px;
-    margin-left: 2px;
-    border-radius: 5px;
-    background-color: #6a5fdf;
-}
-
-.category-text-style {
-    margin: 2px 8px 0px 8px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.category-btn-popup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 28px;
-    margin-top: 2px;
-    margin-left: 8px;
-    border-radius: 5px;
-    background-color: red;
-}
-
-/**************************/
-/* Admin.css & Orders.css */
-/**************************/
-
 .your-div-class {
   margin: 8px; /* Consistent margin */
   box-sizing: border-box; /* Keeps padding/borders inside width */
   width: calc(100% - 16px); /* Optional: fills parent minus margins */
   overflow: auto; /* Required for resize to work */
 }
+
+.off-white-text {
+    color: #d0d2d6;
+}
+
+.hidden {
+    display: none;
+}
+
+/**************************/
 
 .category-content-page {
     width: 100%;
@@ -60,149 +24,9 @@
     background: lightblue;
 }
 
-.on-hover-row:hover {
-    background-color:hsl(from rgb(179, 171, 184) h s 85%);
-    width: 28px;
-    height: 24px;;
-    color: cornflowerblue;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.hidden {
-    display: none;
-}
-
-.page-btn-ul {
-    padding-right: 6px;
-    margin-top: 14px;
-}
-
-thead th {
-    border-bottom: 3px solid rgb(247, 210, 142);
-}
-
-.category-bottom-outer {
-    padding: 4px;
-    background-color: #6a5fdf;
-    border-radius: 5px;
-    margin-top: 6px;;
-}
-
-.category-form-box {
-    display: flex;
-    height: 338px;
-    width: 382px;
-    margin-top: 12px;
-    margin-left: 3px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: dashed;
-}
-
-.category-img-lg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.category-button-div {
-    height: 64px;
-    width: auto;
-    justify-items: center;
-}
-
-.category-button-add {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 28px;
-    margin-top: 16px;
-    border-radius: 5px;
-    background-color: red;
-}
-
-.category-form-div {
-    height: 100%;
-}
-
-.category-table-wrap {
-    position: relative;
-    overflow-x: auto;
-    border-radius: 5px;
-
-}
-
-.category-table-column {
-    height: 20px;
-    width: 12px;
-    padding-inline: 3px;
-    padding-block: 4px;
-    font-size: 16px;
-}
-
-.category-table-tr {
-    width: 25%;
-    justify-items: center;
-    padding-inline: 3px;
-    padding-block: 4px;
-    font-size: medium;
-    white-space: nowrap;
-}
-
-.category-bottom-table {    
-    width: 100%;
-    border-radius: 5px;
-    text-align: center;
-    color: #d0d2d6;
-    border: 2px solid slategray;
-}
-
-.category-cell {
-    padding-right: 6px;
-    margin-left: 6px;
-}
-
-.category-edit-icon {
-    padding-right: 3px;
-    padding-left: 6px;
-}
-
-.category-edit-icon:hover {
-    cursor: pointer;
-}
-
-.category-color-red {
-    color: red;
-}
-
-.category-color-yellow {
-    color: yellow;
-}
-
-.category-center-div {
-    width: 250px;
-    text-align: center;
-}
-
-/*************/
-/* Admin.css */
-/*************/
-.category-msg-icon {
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-top: 4px;
-    margin-right: 12px;
-    margin-left: 6px;
-}
+/**************************/
+/* Category first div.    */
+/**************************/
 
 .category-content-first {
     display: flex;
@@ -211,8 +35,70 @@ thead th {
     padding-left: 6px;
 }
 
+.category-add-popup {
+    height: 60px;
+    width: 412px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: -9px;
+    margin-left: 2px;
+    border-radius: 5px;
+    background-color: #6a5fdf;
+}
+
+/* Visible by default (mobile/small screens) */
+.mobile-only {
+  display: flex;
+}
+
+/* Hide when screen width is 650px or larger */
+@media screen and (min-width: 700px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.show-graph {
+    display: block !important;
+    /* max-width: 412px !important; */
+}
+
+.hide-graph {
+    display: none !important;
+    max-width: 0px !important;
+    /* content: "What happened!!!"; */
+}
+
+.category-text-style {
+    margin: 2px 8px 0px 16px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* .off-white-text  */
+
+.category-btn-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 28px;
+    margin-top: 2px;
+    margin-right: 16px;
+    margin-left: 8px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/* .off-white-text  */
+
+/**************************/
+/* Category second div.   */
+/**************************/
+
 .category-chart-outer {
-display: flex;
+    display: flex;
     /* border: 2px solid black; */
     width: 1060px;
     height: 0px;
@@ -234,50 +120,26 @@ display: flex;
     padding: 10px;
 }
 
-.category-name-label {
-    margin-left: 6px;
-    font-size: 20px;
-}
-
 .category-grid-container > div {
     display: block;
     padding: 12px 0px 12px 0px;
     margin-right: 4px;
     font-size: 18px;
     max-height: 533px;
+    /* max-width: 412px; */
 }
 
-.category-order-detail {
-    display: block;
-    width: 610px;
-    padding-top: 4px;
-    padding-left: 4px;
-    background-color: #aaf;
-    border-radius: 3px;
-    border-bottom: 3px solid rgb(106, 163, 68);
-    border-right: 3px solid rgb(106, 163, 68);
-}
+/*****************************/
+/* Category 2nd div item 1   */
+/*****************************/
 
-.item1 {
+.category-item1 {
     background-color: #6a5fdf;
     border-radius: 5px;
 }
 
-.item2 {
-    background-color: #6a5fdf;
-    border-radius: 5px;
-}
+/**********************************/
 
-.div-seller-msg {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 12px;;
-}
-
-
-/**************/
-/* Orders.css */
-/**************/
 .category-div-outer {
     display: flex;
     justify-content: space-between;
@@ -315,6 +177,244 @@ display: flex;
     margin: 8px 8px 18px 0px;
 }
 
+/**********************************/
+
+.category-bottom-outer {
+    padding: 4px;
+    background-color: #6a5fdf;
+    border-radius: 5px;
+    margin-top: 6px;;
+}
+
+/*****************************/
+/* Category 2nd div table    */
+/*****************************/
+
+.category-table-wrap {
+    position: relative;
+    overflow-x: auto;
+    border-radius: 5px;
+
+}
+
+.category-bottom-table {    
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: #d0d2d6;
+    border: 2px solid slategray;
+}
+
+/* .category-bottom-table */
+
+.category-table-column {
+    height: 20px;
+    width: 12px;
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: 16px;
+}
+
+/* .category-table-column */
+/* .category-table-column */
+/* .category-table-column */
+
+.category-table-tr {
+    width: 25%;
+    justify-items: center;
+    padding-inline: 3px;
+    padding-block: 4px;
+    font-size: medium;
+    white-space: nowrap;
+}
+
+/* .category-table-tr  */
+
+.category-msg-icon {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-left: 6px;
+}
+
+/* .category-table-tr  */
+/* .category-table-tr  */
+
+.category-cell {
+    padding-right: 6px;
+    margin-left: 6px;
+}
+
+.category-edit-icon {
+    padding-right: 3px;
+    padding-left: 6px;
+}
+
+.category-edit-icon:hover {
+    cursor: pointer;
+}
+
+.category-color-yellow {
+    color: yellow;
+}
+
+/* .category-edit-icon  */
+
+.category-color-red {
+    color: red;
+}
+
+/*****************************/
+/* Category 2nd div item 2   */
+/*****************************/
+
+.category-item2 {
+    background-color: #6a5fdf;
+    border-radius: 5px;
+}
+
+/*****************************/
+/* Category item 2 div 1        */
+/*****************************/
+
+.category-add-title {
+    Width: 396px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+
+/* .off-white-text */
+
+/*****************************/
+/* Category item 2 - form    */
+/*****************************/
+
+/* .off-white-text */
+
+.category-name-label {
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+/* .off-white-text */
+
+#name {
+    width: 251px;
+    margin-top: 8px;
+    margin-left: 6px;
+    height: 24px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/**********************************/
+
+.category-form-div {
+    height: 100%;
+}
+
+.category-form-box {
+    display: flex;
+    height: 338px;
+    width: 382px;
+    margin: 12px 0px 0px 12px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: dashed;
+}
+
+/* .off-white-text */
+
+.category-img-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************/
+
+.category-button-div {
+    height: 64px;
+    width: auto;
+    justify-items: center;
+}
+
+.category-button-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 28px;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/* .off-white-text */
+
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+
+
+
+/* 
+.div-seller-msg {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;;
+}
+
+.on-hover-row:hover {
+    background-color:hsl(from rgb(179, 171, 184) h s 85%);
+    width: 28px;
+    height: 24px;;
+    color: cornflowerblue;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.page-btn-ul {
+    padding-right: 6px;
+    margin-top: 14px;
+}
+
+thead th {
+    border-bottom: 3px solid rgb(247, 210, 142);
+}
+
+.category-center-div {
+    width: 250px;
+    text-align: center;
+}
+
+.category-name-label {
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+.category-order-detail {
+    display: block;
+    width: 610px;
+    padding-top: 4px;
+    padding-left: 4px;
+    background-color: #aaf;
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(106, 163, 68);
+    border-right: 3px solid rgb(106, 163, 68);
+}
+
 .category-div {
     display: flex;
     justify-content: space-between;
@@ -332,9 +432,9 @@ display: flex;
     color: #e8e8e8;
 }
 
-{/* .category-text-uppercase {
+.category-text-uppercase {
      text-transform: uppercase; 
- */}
+}
 
 .category-div-bottom {
     width: 612px;
@@ -357,10 +457,6 @@ display: flex;
     color: white;
 }
 
-.off-white-text {
-    color: #d0d2d6;
-}
-
 .recient-sellers {
     background-color: #6a5fdf;
     font-size: medium;
@@ -373,23 +469,6 @@ display: flex;
     width: 160px;
     min-width: 160px;
     height: 20px;
-}
-
-.category-add-title {
-    Width: 396px;
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
-    margin-bottom: 21px;
-}
-
-#name {
-    width: 95%;
-    margin-top: 8px;
-    margin-left: 6px;
-    height: 24px;
-    font-size: 15px;
-    border-radius: 5px;
 }
 
 .view-all-sellers {
@@ -416,7 +495,7 @@ display: flex;
    #cat-add  {
      display: flex;
    }
-}
+} */
 
 /* 
 @media (min-width: 800px) {

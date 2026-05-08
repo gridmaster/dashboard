@@ -12,29 +12,12 @@ const Header = ({showSidebar, setShowSidebar}) => {
 
     return (
         
-        <div className='header'>
+        <div className='header-border-div lg-header-screen'>
+            <div className='lg-header-bar header-div'>
 
-            <div className={`${showSidebar === true ? 'div-inner-header left-anchored right-anchored' : 'div-inner-header left-sb-anchored right-anchored'}`}>
-
-                <button onClick={() => setShowSidebar(!showSidebar)} className="btn">
-                    <FaList className='show-list-icon'/>
-                </button>
-
-                <span className={`${showSidebar === true ? 'span-show-text left-free' : 'span-hide-text left-sb-anchored'}`} > Hide sidebar</span>
-                <span className={`${showSidebar !== true ? 'span-show-text left-free' : 'span-hide-text '}`} > Show sidebar</span>
-
-                <div className='header-input'>
-                    <input className='header-text' type='text' />
-                </div>
-
-                <div className='header-content'>
-                    <div className='header-user-ids'>
-                        <span className='header-user'>What up!</span>
-                        <span className='header-user'>SUCKERS!</span>
-                    </div>
-            
-                    <button className='image-button' onClick={handleClick}></button>
-                </div>
+            <div onClick={() => setShowSidebar(!showSidebar)} className='' >
+                <span><FaList/></span>
+            </div>
 
             </div>
         </div>

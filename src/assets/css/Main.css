@@ -1,55 +1,41 @@
+.main-boarder-div {
+  background-color: #cdcae9;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main-outlet-div {
+  margin-left: 0px;
+  padding-top: 95px;
+  transition: all;
+}
+
+@media screen and (min-width: 1024px) {
+  .lg-outlet {
+    margin-left: 260px;
+  }
+}
+
+
+
+
+
+
+
 
 /* #outer {width:100%; margin:0 auto;} */
-#outer {display: flex; width: 100vw; height:100vh}
-#inner {overflow:hidden;}
-#header {min-height:40px; background:#bbb}
-#content {min-width: 1133px; min-height:100vh; float:right; background:lightblue}
-#sidebar {color:#ddd}
-
-.show-sidebar {
-  display: revert;
-} 
-
-.sidebar-height {
+#outer {
+  border: 2px solid black;
+  display: flex;
+  width: 97vw;
+  max-width: 1275px;
   height: 100vh;
 }
-
-.hide-sidebar {
-  display: none;
-}
-
-.left-sb-anchored {
-  position: absolute;
-  left: 8px;
-}
-
-.parent_div_1, .parent_div_2, .parent_div_3 {
-    display: flex;
-    width: 99%;
-    margin-right: 16px;
-    /* IF YOU WANT PARENT DIVS NEXT TO EACH OTHER */
-    /*float: left;*/
-}
-
-div.main {
-    background-color: #cdcae9;
-    width: 100%;
-    min-height: 100%;
-}
-
-div.outlet {
-    margin-left: 100;
-    padding-left: 260px;
-    padding-top: 75px;
-    transition: all;
-}
-
-h1.sidebar {
-    margin-top: 120px;
-    font-size: 25px;
-    text-orientation: center;
-    text-indent: 10px;
-}
-
-
-
+#inner {
+  overflow:hidden;}
+#header {
+  min-height:40px; background:#bbb}
+#content {
+  min-width: 1133px; min-height:100vh; float:right; background:lightblue}
+#sidebar {
+  color:#ddd}

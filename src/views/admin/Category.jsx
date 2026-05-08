@@ -3,6 +3,7 @@ import { FaTrash } from "react-icons/fa6";
 import { FaEdit } from 'react-icons/fa'
 import Pagination from '../Pagination';
 
+// import '../../assets/css/Main.css'
 import '../../assets/css/Category.css'
 
 const Category = () => {
@@ -10,26 +11,26 @@ const Category = () => {
     const [parPage, setParPage] = useState(5)
     const [currentPage, setCurrentPage] = useState(1)
     const [searchValue, setSearchValue] = useState('')
-    const [showSidebar, setShowSidebar] = useState(true);
-    console.log("showSidebar = " + showSidebar)
+    const [show, setShow] = useState(true);
+
+    const handleClick = () => {
+        setShow(!show)
+    }
 
     return (
         <div className='category-content-first'>
 
-        {/* className={width <= 768 ? "addCat-main" : "addCat-hide"}
-        <AddCategory showSidebar={showSidebar} setShowSidebar={setShowSidebar} /> */}
-
             <div className='category-add-popup mobile-only' >
-                <span className='category-text-style off-white-text'>Category Add</span>
+                <span className='category-text-style swap-text off-white-text'>{show ? 'Add Category' : 'Show Detail'}</span>
                 <span >
-                    <button className='category-btn-popup off-white-text'>Add</button>
+                    <button onClick={handleClick} className='category-btn-popup off-white-text'>{show ? 'Add' : 'Show'}</button>
                 </span>
             </div>
 
             <div className='category-chart-outer'>
                 <div className="category-grid-container">
 
-                    <div className="item1">
+                    <div className={`${show === true ? 'show-graph' : 'hide-graph'} category-item1`}>
                         <div className='category-div-outer'>
                             <select onChange={(e) => setParPage(parseInt(e.target.value))} className='category-select'>
                                 <option value="5">5</option>
@@ -90,10 +91,9 @@ const Category = () => {
                             parPage = {parPage}
                             showItem = {27}
                         />
-
                     </div>
 
-                    <div className="item2">
+                    <div className="category-item2">
                         <div>
                             <h1 className="category-add-title off-white-text">Add Category</h1>
                         </div>
@@ -107,6 +107,7 @@ const Category = () => {
                                 <label className='category-form-box off-white-text'>
                                     <img className='category-img-lg' src='' alt='Select Image' />
                                 </label>
+                                <input className='hidden' type="file" name="image" id="image" />
                             </div>
                             <div className='category-button-div'>
                                 <button className='category-button-add off-white-text'>Add Category</button>

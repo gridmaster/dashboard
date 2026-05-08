@@ -10,73 +10,76 @@ import '../../assets/css/Home.css';
 
 const AdminDashboard = () => {
 
-    const state = {
-        series: [
-            {
-                name: 'Orders',
-                data : [23,34,45,45,65,43,44,43,32,20,23,34]
-            },
-            {
-                name: 'Revenue',
-                data : [13,32,45,37,54,43,34,33,32,29,43,44]
-            },
-            {
-                name: 'Sellers',
-                data : [55,53,57,78,86,67,58,59,76,77,54,43]
-            }
-        ],
-        options : {
-            color : ['#181eee8', '#181eee8'],
-            plotOptions : {
-                radius : 30
-            },
-            chart : {
-                background : 'transparent',
-                foreColor : '#d0d2d6'
-            },
-            dataLabels : {
-                enabled : false
-            },
-            strock : {
-                show : true,
-                curve : ['smooth', 'straight', 'stepline'],
-                lineCap : 'butt',
-                colors : '#f0f0f0',
-                width : .5,
-                dashArray : 0
-            },
-            xaxis : {
-                categories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            },
-            legend : {
-                position : 'top'
-            },
-            responsive : [
-                {
-                breakpoint : 565,
-                yaxis : {
-                    cateories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                },
-                options : {
-                    plotOptions : {
-                        bar : {
-                            horizontal : true
-                        }
-                    },
-                    chart : {
-                        height : "550px"
-                    }
-                }
-            }
-            ]
+    // const state = {
+    //     series: [
+    //         {
+    //             name: 'Orders',
+    //             data : [23,34,45,45,65,43,44,43,32,20,23,34]
+    //         },
+    //         {
+    //             name: 'Revenue',
+    //             data : [13,32,45,37,54,43,34,33,32,29,43,44]
+    //         },
+    //         {
+    //             name: 'Sellers',
+    //             data : [55,53,57,78,86,67,58,59,76,77,54,43]
+    //         }
+    //     ],
+    //     options : {
+    //         color : ['#181eee8', '#181eee8'],
+    //         plotOptions : {
+    //             radius : 30
+    //         },
+    //         chart : {
+    //             background : 'transparent',
+    //             foreColor : '#d0d2d6'
+    //         },
+    //         dataLabels : {
+    //             enabled : false
+    //         },
+    //         strock : {
+    //             show : true,
+    //             curve : ['smooth', 'straight', 'stepline'],
+    //             lineCap : 'butt',
+    //             colors : '#f0f0f0',
+    //             width : .5,
+    //             dashArray : 0
+    //         },
+    //         xaxis : {
+    //             categories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    //         },
+    //         legend : {
+    //             position : 'top'
+    //         },
+    //         responsive : [
+    //             {
+    //             breakpoint : 565,
+    //             yaxis : {
+    //                 cateories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    //             },
+    //             options : {
+    //                 plotOptions : {
+    //                     bar : {
+    //                         horizontal : true
+    //                     }
+    //                 },
+    //                 chart : {
+    //                     height : "550px"
+    //                 }
+    //             }
+    //         }
+    //         ]
             
-        }
+    //     }
 
-    }
-
+    // }
 
     return (
-        <div className='dash-content-first'>
+        <div>
+            <span>Admin Dashboard</span>
+        </div>
+
+        /* <div className='dash-content-first'>
 
             <div className='sum-cards'>
                 <div className='dash-summary-cards card-BGColor-1'>
@@ -214,7 +217,7 @@ const AdminDashboard = () => {
                 </div>
                 
             </div>
-        </div>
+        </div> */
     );
 };
 
