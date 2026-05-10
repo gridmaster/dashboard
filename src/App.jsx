@@ -12,7 +12,11 @@ function App() {
     setAllRoutes([...allRoutes, routes])
   },[])
 
-  return <Router allRoutes= {allRoutes} />
+  return (
+    <Router allRoutes= {allRoutes}>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Router>
+)
 }
 
 export default App;

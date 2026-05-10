@@ -16,18 +16,18 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
 
     return (
         <div>
-            <div onClick={() => setShowSidebar(false)} className={`sidebar-show-hide ${!showSidebar ? 'invisible' : 'visible'} sidebar-show-hide-div`} >
+            <div onClick={() => setShowSidebar(!showSidebar)} className={`sidebar-show-hide ${!showSidebar ? 'invisible' : 'visible'} sidebar-show-hide-div`} >
                 
             </div>
 
-            <div className={`sidebar-div-3 ${!showSidebar ? 'sidebar-set-left' : 'sidebar-reset-left lg-sidebar' } `}>
+            <div className={`sidebar-div-3 ${showSidebar ? 'sidebar-set-left' : 'sidebar-reset-left lg-sidebar' } `}>
                 <div className='sidebar-div-link'>
                     <Link to='/' className='sidebar-link'>
                         <img src='http://localhost:3000/images/logo.png' alt='' />
                     </Link>
                 </div>
 
-                <div className={`sidebar-menu  ${!showSidebar ? 'sidebar-reset-left' : 'sidebar-set-left lg-sidebar' } `}>
+                <div>
                     <ul className='sidebar-li-no-bullets'>
                         {
                             allNav.map((n,i) => <li key={i}>

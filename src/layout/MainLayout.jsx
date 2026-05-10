@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
-// import '../assets/css/Home.css';
+
 import '../assets/css/Main.css';
-// import '../assets/css/Sidebar.css';
 
 const MainLayout = () => {
 

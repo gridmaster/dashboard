@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
-import '../assets/css/Header.css';
 import { FaList } from "react-icons/fa";
+
+import '../assets/css/Header.css';
 
 const Header = ({showSidebar, setShowSidebar}) => {
 
@@ -15,7 +16,7 @@ const Header = ({showSidebar, setShowSidebar}) => {
         <div className='header-border-div lg-header-screen'>
             <div className='lg-header-bar header-div'>
 
-            <div onClick={() => setShowSidebar(!showSidebar)} className='' >
+            <div onClick={() => setShowSidebar(!showSidebar)} className='header-showSidebar lg-header-sidebar' >
                 <span><FaList/></span>
             </div>
 
